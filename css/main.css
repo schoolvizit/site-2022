@@ -682,11 +682,8 @@ img {
   padding-right: 20px;
 }
 
-.content-journal__image img {
-  max-width: 400px;
-}
-
 .content-journal__info {
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -697,7 +694,6 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 630px;
 }
 
 .content-journal__title {
@@ -722,6 +718,11 @@ img {
   height: 100%;
 }
 
+.content-journal__list li {
+  font-size: 20px;
+  line-height: 1;
+}
+
 .content-journal__list li:not(:last-child) {
   margin-bottom: 15px;
 }
@@ -743,6 +744,8 @@ img {
 .content-journal__list .item span {
   font-weight: 600;
   text-transform: uppercase;
+  font-size: 20px;
+  line-height: 1;
 }
 
 .content-journal span.small {
@@ -896,10 +899,6 @@ img {
           order: 1;
 }
 
-.content-trumo__image img {
-  max-width: 400px;
-}
-
 .content-trumo__info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -911,7 +910,7 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 630px;
+  width: 50%;
 }
 
 .content-trumo__title {
@@ -938,6 +937,13 @@ img {
 
 .content-trumo__list li {
   margin-bottom: 15px;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.content-trumo__list--bottom li {
+  font-size: 20px;
+  line-height: 1;
 }
 
 .content-trumo__list--bottom li:not(:last-child) {
@@ -962,6 +968,8 @@ img {
 .content-trumo__list .item span, .content-trumo__list--bottom .item span {
   font-weight: 600;
   text-transform: uppercase;
+  font-size: 20px;
+  line-height: 1;
 }
 
 .content-trumo span.small {
@@ -1026,10 +1034,6 @@ img {
   padding-right: 20px;
 }
 
-.content-papka__image img {
-  max-width: 400px;
-}
-
 .content-papka__info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1041,7 +1045,7 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 630px;
+  width: 50%;
 }
 
 .content-papka__title {
@@ -1068,6 +1072,13 @@ img {
 
 .content-papka__list li {
   margin-bottom: 15px;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.content-papka__list--bottom li {
+  font-size: 20px;
+  line-height: 1;
 }
 
 .content-papka__list--bottom li:not(:last-child) {
@@ -1092,6 +1103,8 @@ img {
 .content-papka__list .item span, .content-papka__list--bottom .item span {
   font-weight: 600;
   text-transform: uppercase;
+  font-size: 20px;
+  line-height: 1;
 }
 
 .content-papka span.small {

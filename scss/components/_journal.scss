@@ -33,15 +33,11 @@
 
   &__image {
     padding-right: 20px;
-
-    img {
-      max-width: 400px;
-    }
   }
 
   &__info {
+    width: 50%;
     @include flex-col-sb;
-    max-width: 630px;
   }
 
   &__title {
@@ -55,6 +51,11 @@
   &__body {
     @include flex-col-sb;
     height: 100%;
+  }
+
+  &__list li {
+    font-size: 20px;
+    line-height: 1;
   }
 
   &__list li:not(:last-child) {
@@ -77,6 +78,8 @@
     .item span {
       font-weight: 600;
       text-transform: uppercase;
+      font-size: 20px;
+      line-height: 1;
     }
   }
 
