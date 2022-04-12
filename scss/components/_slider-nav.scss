@@ -1,0 +1,47 @@
+.slider-nav {
+  @include flex-all-center;
+
+  &__btn {
+    position: absolute;
+    top: 60%;
+    transform: translateY(-60%);
+    z-index: 10;
+    width: 60px;
+    height: 60px;
+    background: var(--color-light);
+    border-radius: 100%;
+user-select: none;
+    svg {
+      display: block;
+      margin: 0 auto;
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+      fill: var(--color-orange);
+    }
+  }
+}
+
+.vignet {
+
+  &__prev {
+    left: 0;
+  }
+
+  &__next {
+    right: 0;
+  }
+}
+
+.portret {
+
+  &__prev {
+    left: 0;
+    background: var(--color-lightgray);
+  }
+
+  &__next {
+    right: 0;
+    background: var(--color-lightgray);
+  }
+}

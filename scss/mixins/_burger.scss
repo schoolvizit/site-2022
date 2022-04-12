@@ -1,0 +1,160 @@
+@mixin burger {
+  @media (max-width:768px) {
+    body.lock {
+      overflow: hidden;
+    }
+
+    .header__logo {
+      flex: 0 0 40px;
+    }
+
+    .header__body {
+      height: 80px;
+    }
+
+    // Кнопка бургер
+    .burger {
+      position: relative;
+      display: block;
+      width: 35px;
+      height: 30px;
+      cursor: pointer;
+      z-index: 11;
+    }
+
+    .burger span {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .burger span,
+    .burger span:before,
+    .burger span:after {
+      right: 0;
+      width: 100%;
+      position: absolute;
+      height: 2px;
+      background: var(--color-text);
+      display: block;
+      transition: .2s;
+    }
+
+    .burger span:before {
+      content: "";
+      top: -10px;
+      transition: top .2s .2s, transform .2s;
+    }
+
+    .burger span:after {
+      content: "";
+      bottom: -10px;
+      transition: bottom .2s .2s, transform .2s;
+    }
+
+    .burger span.active:before {
+      content: "";
+      top: 0px;
+      transform: rotate(45deg);
+      transition: top .2s, transform .2s .2s;
+    }
+
+    .burger span.active:after {
+      content: "";
+      bottom: 0;
+      width: 100%;
+      transform: rotate(-45deg);
+      transition: bottom .2s, transform .2s .2s;
+    }
+
+    .burger span.active {
+      background-color: transparent;
+    }
+
+    .burger__overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1;
+    }
+
+    .burger__overlay.active {
+      display: block;
+    }
+
+    .header__menu {
+      position: fixed;
+      display: flex;
+      justify-content: center;
+      top: 0;
+      right: -100%;
+      width: 50%;
+      height: 100%;
+      overflow: auto;
+      background-color: var(--color-gray);
+      padding: 50px 10px 20px;
+      transition: right 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+
+    .header__menu.active {
+      right: 0;
+    }
+
+    // убираем скролл (только в хром)
+    .header__menu::-webkit-scrollbar {
+      width: 0px;
+    }
+
+    .header__list {
+      flex-direction: column;
+      text-align: center;
+      margin-top: 40px;
+      font-size: 30px;
+    }
+
+    .header__item{
+      margin-bottom: 50px;
+     }
+
+    .header__item:not(:last-child) {
+      margin-right: 0;
+    }
+
+    .header__item a.active {
+      color: var(--color-white);
+    }
+
+    .content {
+      padding-top: 70px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    // .header__menu {
+    //   width: 100%;
+    //   right: 0;
+    // }
+  }
+
+  @include mobile {
+
+    .header__body {
+      height: 0px;
+    }
+    .header__menu {
+      width: 100%;
+      height: 100%;
+      right: 0;
+      top: 0;
+    }
+    .burger{
+      display: none;
+    }
+
+    .header__list{
+      font-size: 40px;
+    }
+  }
+}
