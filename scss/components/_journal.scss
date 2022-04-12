@@ -43,7 +43,7 @@
   &__title {
     font-weight: 600;
     font-style: normal;
-    line-height: 140%;
+    line-height: 1;
     color: var(--color-orange);
     margin-bottom: 25px;
   }
@@ -86,22 +86,6 @@
   span.small {
     text-transform: lowercase;
   }
-}
-
-.btn {
-  display: inline-block;
-  width: 270px;
-  height: 50px;
-  border: 2px solid var(--color-light);
-  border-radius: 100px;
-  background-color: var(--color-orange);
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 100%;
-  text-transform: uppercase;
-  color: var(--color-light);
-  text-align: center;
 }
 
 .select {

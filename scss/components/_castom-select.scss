@@ -8,10 +8,10 @@
     display: block;
     text-align: left;
     min-width: 283px;
-    padding: 8px 20px;
+    padding: 4px 20px;
     background-color: rgba(255, 148, 1, .1);
     border: 2px solid var(--color-orange);
-    font-size: 24px;
+    font-size: 20px;
     font-style: italic;
     font-weight: normal;
     // color: var(--color-orange);
@@ -40,13 +40,14 @@
 
   &__btn.active::after {
     content: "";
-    top: 35%;
+    top: 30%;
     transform: rotate(-180deg);
   }
 
   &__list {
     position: absolute;
-    top: 47px;
+    font-size: 20px;
+    top: 36px;
     left: 0;
     min-width: 283px;
     background-color: var(--color-light);
@@ -65,7 +66,7 @@
   }
 
   &__list-item {
-    padding: 10px 20px;
+    padding: 4px 20px;
     background-color: var(--color-light);
        border: 1px solid rgba(100, 126, 137, .3);
     cursor: pointer;
@@ -77,7 +78,7 @@
   }
 
   &__list-item:last-child {
-    padding-bottom: 15px;
+    padding-bottom: 10px;
   }
 
 }

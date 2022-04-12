@@ -699,7 +699,7 @@ img {
 .content-journal__title {
   font-weight: 600;
   font-style: normal;
-  line-height: 140%;
+  line-height: 1;
   color: var(--color-orange);
   margin-bottom: 25px;
 }
@@ -750,22 +750,6 @@ img {
 
 .content-journal span.small {
   text-transform: lowercase;
-}
-
-.btn {
-  display: inline-block;
-  width: 270px;
-  height: 50px;
-  border: 2px solid var(--color-light);
-  border-radius: 100px;
-  background-color: var(--color-orange);
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 100%;
-  text-transform: uppercase;
-  color: var(--color-light);
-  text-align: center;
 }
 
 .select__body {
@@ -916,7 +900,7 @@ img {
 .content-trumo__title {
   font-weight: 600;
   font-style: normal;
-  line-height: 140%;
+  line-height: 1;
   color: var(--color-orange);
   margin-bottom: 25px;
 }
@@ -974,22 +958,6 @@ img {
 
 .content-trumo span.small {
   text-transform: lowercase;
-}
-
-.btn {
-  display: inline-block;
-  width: 270px;
-  height: 50px;
-  border: 2px solid var(--color-light);
-  border-radius: 100px;
-  background-color: var(--color-orange);
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 100%;
-  text-transform: uppercase;
-  color: var(--color-light);
-  text-align: center;
 }
 
 .papka {
@@ -1051,7 +1019,7 @@ img {
 .content-papka__title {
   font-weight: 600;
   font-style: normal;
-  line-height: 140%;
+  line-height: 1;
   color: var(--color-orange);
   margin-bottom: 25px;
 }
@@ -1109,22 +1077,6 @@ img {
 
 .content-papka span.small {
   text-transform: lowercase;
-}
-
-.btn {
-  display: inline-block;
-  width: 270px;
-  height: 50px;
-  border: 2px solid var(--color-light);
-  border-radius: 100px;
-  background-color: var(--color-orange);
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 100%;
-  text-transform: uppercase;
-  color: var(--color-light);
-  text-align: center;
 }
 
 .vignet {
@@ -1351,10 +1303,10 @@ img {
   display: block;
   text-align: left;
   min-width: 283px;
-  padding: 8px 20px;
+  padding: 4px 20px;
   background-color: rgba(255, 148, 1, 0.1);
   border: 2px solid var(--color-orange);
-  font-size: 24px;
+  font-size: 20px;
   font-style: italic;
   font-weight: normal;
   z-index: 2;
@@ -1385,14 +1337,15 @@ img {
 
 .select__btn.active::after {
   content: "";
-  top: 35%;
+  top: 30%;
   -webkit-transform: rotate(-180deg);
           transform: rotate(-180deg);
 }
 
 .select__list {
   position: absolute;
-  top: 47px;
+  font-size: 20px;
+  top: 36px;
   left: 0;
   min-width: 283px;
   background-color: var(--color-light);
@@ -1413,7 +1366,7 @@ img {
 }
 
 .select__list-item {
-  padding: 10px 20px;
+  padding: 4px 20px;
   background-color: var(--color-light);
   border: 1px solid rgba(100, 126, 137, 0.3);
   cursor: pointer;
@@ -1425,5 +1378,5 @@ img {
 }
 
 .select__list-item:last-child {
-  padding-bottom: 15px;
+  padding-bottom: 10px;
 }
