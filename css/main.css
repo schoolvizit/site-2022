@@ -106,7 +106,7 @@ h1, h2, h3, h4, h5, h6, p {
 /* stylelint-disable */
 @font-face {
   font-family: 'Montserrat';
-  src: local(""), url("../fonts/MontserratItalic.woff2") format("woff2");
+  src: local(""), url("../fonts/MontserratItalic.woff") format("woff"), url("../fonts/MontserratItalic.woff2") format("woff2");
   font-weight: 400;
   font-style: italic;
   font-display: swap;
@@ -114,7 +114,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 @font-face {
   font-family: 'Montserrat';
-  src: local(""), url("../fonts/MontserratSemiBold.woff2") format("woff2");
+  src: local(""), url("../fonts/MontserratSemiBold.woff") format("woff"), url("../fonts/MontserratSemiBold.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -122,7 +122,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 @font-face {
   font-family: 'Montserrat';
-  src: local(""), url("../fonts/MontserratSemiBoldItalic.woff2") format("woff2");
+  src: local(""), url("../fonts/MontserratSemiBoldItalic.woff") format("woff"), url("../fonts/MontserratSemiBoldItalic.woff2") format("woff2");
   font-weight: 600;
   font-style: italic;
   font-display: swap;
@@ -130,7 +130,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 @font-face {
   font-family: 'Montserrat';
-  src: local(""), url("../fonts/MontserratBlackItalic.woff2") format("woff2");
+  src: local(""), url("../fonts/MontserratBlackItalic.woff") format("woff"), url("../fonts/MontserratBlackItalic.woff2") format("woff2");
   font-weight: 900;
   font-style: italic;
   font-display: swap;
@@ -138,7 +138,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 @font-face {
   font-family: 'PoiretOne';
-  src: local(""), url("../fonts/PoiretOne-Regular.woff2") format("woff2");
+  src: local(""), url("../fonts/PoiretOne-Regular.woff") format("woff"), url("../fonts/PoiretOne-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -598,6 +598,7 @@ img {
 }
 
 .fullscreen {
+  position: relative;
   background-color: var(--color-light);
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;

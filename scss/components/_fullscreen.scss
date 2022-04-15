@@ -1,5 +1,5 @@
 .fullscreen {
-  // position: relative;
+  position: relative;
   background-color: var(--color-light);
   flex: 1 1 auto;
   display: flex;
@@ -11,15 +11,13 @@
 
 
   &__image {
-margin: auto 0;
+    margin: auto 0;
   }
 
   &__info {
     position: absolute;
     width: 100%;
-   
     background-color: var(--color-gray);
-
     bottom: 130px;
     z-index: 1;
 
@@ -37,7 +35,7 @@ margin: auto 0;
 .info {
 
   &__body {
- height: 80px;
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
