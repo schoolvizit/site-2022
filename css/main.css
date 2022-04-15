@@ -626,10 +626,13 @@ img {
           transform: translateY(-50%);
 }
 
+.fullscreen__info {
+  margin-bottom: 130px;
+}
+
 .info {
   width: 100%;
   background-color: var(--color-gray);
-  margin-bottom: 130px;
   z-index: 1;
 }
 
