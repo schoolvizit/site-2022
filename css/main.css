@@ -345,10 +345,9 @@ img {
 }
 
 .header {
-  position: absolute;
+  position: fixed;
   width: 100%;
-  top: 130px;
-  left: 0;
+  margin-top: 130px;
   z-index: 10;
   background-color: var(--color-lightgray);
   font-family: "Poiret One";
@@ -358,7 +357,7 @@ img {
 
 @media (max-width: 1200px) {
   .header {
-    top: 65px;
+    margin-top: 65px;
     font-size: 30px;
   }
 }
@@ -371,11 +370,8 @@ img {
   font-size: 64px;
   line-height: 68px;
   text-transform: uppercase;
-  position: absolute;
-  top: 8px;
-  left: 0;
   color: var(--color-gray);
-  text-align: left;
+  margin-top: 70px;
   text-shadow: 2px 2px 0 var(--color-lightgray), 2px -2px 0 var(--color-lightgray), -2px 2px 0 var(--color-lightgray), -2px -2px 0 var(--color-lightgray), 2px 0px 0 var(--color-lightgray), 0px 2px 0 var(--color-lightgray), -2px 0px 0 var(--color-lightgray), 0px -2px 0 var(--color-lightgray);
 }
 
@@ -385,24 +381,14 @@ img {
   }
 }
 
-.header:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-}
-
 .header__body {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -612,6 +598,7 @@ img {
 }
 
 .fullscreen {
+  position: relative;
   background-color: var(--color-light);
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
@@ -631,6 +618,13 @@ img {
           justify-content: end;
   text-align: center;
   min-height: 100vh;
+}
+
+.fullscreen__content {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .info {
