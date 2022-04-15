@@ -619,22 +619,27 @@ img {
   min-height: 100vh;
 }
 
+.fullscreen__image {
+  margin: auto 0;
+}
+
 .fullscreen__info {
+  position: absolute;
   width: 100%;
   background-color: var(--color-gray);
-  margin-bottom: 130px;
+  bottom: 130px;
   z-index: 1;
 }
 
 @media (max-width: 1200px) {
   .fullscreen__info {
-    margin-bottom: 65px;
+    bottom: 65px;
   }
 }
 
 @media (max-width: 576px) {
   .fullscreen__info {
-    margin-bottom: 0;
+    bottom: 0;
   }
 }
 

@@ -11,24 +11,24 @@
 
 
   &__image {
-// margin-bottom: 0;
-
+margin: auto 0;
   }
 
   &__info {
+    position: absolute;
     width: 100%;
    
     background-color: var(--color-gray);
 
-    margin-bottom: 130px;
+    bottom: 130px;
     z-index: 1;
 
     @include small-desktop {
-      margin-bottom: 65px;
+      bottom: 65px;
     }
 
     @include mobile {
-      margin-bottom: 0;
+      bottom: 0;
     }
 
   }
