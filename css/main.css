@@ -620,7 +620,7 @@ img {
   min-height: 100vh;
 }
 
-.fullscreen__content {
+.fullscreen__image {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);

@@ -9,11 +9,11 @@
   text-align: center;
   min-height: 100vh;
 
-  &__content {
-    position: absolute;
+
+  &__image {
+position: absolute;
     top: 50%;
     transform: translateY(-50%);
-
   }
 }
 
