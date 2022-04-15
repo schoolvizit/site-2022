@@ -7,20 +7,22 @@
   align-items: center;
   justify-content: end;
   text-align: center;
-  // min-height: 100vh;
-  min-height: calc(100vh - 80px);
+  min-height: 100vh;
 
 
   &__image {
-    margin: auto 0;
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+
   }
 
   &__info {
-    position: absolute;
+    // position: absolute;
     width: 100%;
     background-color: var(--color-gray);
-    // bottom: 130px;
-    // z-index: 1;
+  margin-bottom: 130px;
+    z-index: 1;
 
     @include small-desktop {
       // bottom: 65px;
