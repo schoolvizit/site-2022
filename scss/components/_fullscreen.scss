@@ -7,7 +7,8 @@
   align-items: center;
   justify-content: end;
   text-align: center;
-  min-height: 100vh;
+  // min-height: 100vh;
+  min-height: calc(100vh - 80px);
 
 
   &__image {

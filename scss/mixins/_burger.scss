@@ -85,12 +85,12 @@
     }
 
     .header__menu {
-      position: fixed;
+      position: absolute;
       display: flex;
       justify-content: center;
       top: 0;
       right: -100%;
-      width: 50%;
+      width: 100%;
       height: 100%;
       overflow: auto;
       background-color: var(--color-gray);
@@ -112,6 +112,7 @@
       text-align: center;
       margin-top: 40px;
       font-size: 30px;
+
     }
 
     .header__item{
@@ -141,6 +142,7 @@
   @include mobile {
 
     .header__body {
+    
 
     }
     .header__menu {
@@ -151,7 +153,12 @@
     }
 
     .header__list{
-      font-size: 40px;
+      position: absolute;
+      font-size: 40px;  background-color: var(--color-gray);
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
     }
   }
 }
