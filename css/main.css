@@ -613,7 +613,7 @@ img {
           align-items: center;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: end;
+          justify-content: flex-end;
   text-align: center;
   min-height: 100vh;
 }
