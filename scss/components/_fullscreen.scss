@@ -14,7 +14,6 @@
 position: absolute;
 top: 50%;
 transform: translateY(-50%);
-
   }
 
   &__info {
@@ -25,11 +24,11 @@ transform: translateY(-50%);
     z-index: 1;
 
     @include small-desktop {
-      // bottom: 65px;
+      margin-bottom: 0;
     }
 
     @include mobile {
-      // bottom: 0;
+      margin-bottom: 0;
     }
 
   }

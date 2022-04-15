@@ -635,6 +635,18 @@ img {
   z-index: 1;
 }
 
+@media (max-width: 1200px) {
+  .fullscreen__info {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .fullscreen__info {
+    margin-bottom: 0;
+  }
+}
+
 .info__body {
   height: 80px;
   display: -webkit-box;
