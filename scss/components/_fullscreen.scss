@@ -11,12 +11,10 @@
 
 
   &__image {
-    position: absolute;
-    top: 50%;
-  
-    transform: translateY(-50%);
-    left: 0;
-      right: 0;
+margin: auto 0;
+img{
+  max-width: 1920px;
+}
   }
 
   &__info {
