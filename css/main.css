@@ -620,12 +620,9 @@ img {
 
 .fullscreen__image {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  background-image: url(../img/fon.png);
-  background-size: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .fullscreen__info {
