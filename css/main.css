@@ -130,7 +130,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 @font-face {
   font-family: 'Montserrat';
-  src: local(""), url("../fonts/MontserratBlackItalic.woff") format("woff"), url("../fonts/MontserratBlackItalic.woff2") format("woff2");
+  src: local("../fonts/MontserratBlackItalic.woff2"), url("../fonts/MontserratBlackItalic.woff") format("woff"), url("../fonts/MontserratBlackItalic.woff2") format("woff2");
   font-weight: 900;
   font-style: italic;
   font-display: swap;
@@ -372,7 +372,9 @@ img {
 
 .header__title {
   width: 500px;
-  font-family: "Cera-300";
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 900;
   font-size: 64px;
   line-height: 68px;
   text-transform: uppercase;
