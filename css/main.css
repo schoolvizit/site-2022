@@ -144,6 +144,14 @@ h1, h2, h3, h4, h5, h6, p {
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Cera-300';
+  src: url("../fonts/CeraPro-Light.eot");
+  src: local("Cera Pro Light"), local("CeraPro-Light"), url("../fonts/CeraPro-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/CeraPro-Light.woff") format("woff"), url("../fonts/CeraPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
 html, body {
   height: 100%;
 }
@@ -364,9 +372,7 @@ img {
 
 .header__title {
   width: 500px;
-  font-family: "Montserrat";
-  font-style: italic;
-  font-weight: 900;
+  font-family: "Cera-300";
   font-size: 64px;
   line-height: 68px;
   text-transform: uppercase;

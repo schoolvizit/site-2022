@@ -47,3 +47,15 @@
   font-style: normal;
   font-display: swap;
 }
+
+
+@font-face {
+  font-family: 'Cera-300';
+  src: url('../fonts/CeraPro-Light.eot');
+  src: local('Cera Pro Light'), local('CeraPro-Light'),
+      url('../fonts/CeraPro-Light.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/CeraPro-Light.woff') format('woff'),
+      url('../fonts/CeraPro-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
