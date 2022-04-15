@@ -578,17 +578,6 @@ img {
 }
 
 @media (max-width: 576px) {
-  .header__body {
-    height: 0px;
-  }
-  .header__menu {
-    width: 100%;
-    right: 0;
-    top: 0;
-  }
-  .burger {
-    display: none;
-  }
   .header__list {
     font-size: 40px;
   }
