@@ -159,8 +159,6 @@ html, body {
   background-color: var(--color-white);
   color: var(--color-text);
   -webkit-text-size-adjust: 100%;
-  min-width: 320px;
-  min-height: 100%;
   font-size: 24px;
   line-height: 24px;
 }
