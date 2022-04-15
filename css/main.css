@@ -598,7 +598,6 @@ img {
 }
 
 .fullscreen {
-  position: relative;
   background-color: var(--color-light);
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
