@@ -11,38 +11,44 @@
 
 
   &__image {
-position: absolute;
+    position: absolute;
     top: 50%;
+  
     transform: translateY(-50%);
+    left: 0;
+      right: 0;
   }
 
-  &__info{
-    margin-bottom: 130px;
+  &__info {
+    width: 100%;
+   
+    background-color: var(--color-gray);
+
+    // margin-bottom: 130px;
+    z-index: 1;
+
+    @include small-desktop {
+      margin-bottom: 65px;
+    }
+
+    @include mobile {
+      margin-bottom: 0;
+    }
+
   }
 }
 
 .info {
-  width: 100%;
-  background-color: var(--color-gray);
-  z-index: 1;
-
-  @include small-desktop {
-    margin-bottom: 65px;
-  }
-
-  @include mobile {
-    margin-bottom: 0;
-  }
 
   &__body {
+ height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
     font-size: 24px;
     line-height: 28px;
     color: var(--color-lightgray);
-  
+
     @include mobile {
       flex-direction: column;
       justify-content: center;
