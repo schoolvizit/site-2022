@@ -18,11 +18,11 @@
     position: absolute;
     width: 100%;
     background-color: var(--color-gray);
-    bottom: 130px;
+    // bottom: 130px;
     z-index: 1;
 
     @include small-desktop {
-      bottom: 65px;
+      // bottom: 65px;
     }
 
     @include mobile {

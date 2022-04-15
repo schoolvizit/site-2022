@@ -347,7 +347,6 @@ img {
 .header {
   position: fixed;
   width: 100%;
-  margin-top: 130px;
   z-index: 10;
   background-color: var(--color-lightgray);
   font-family: "PoiretOne";
@@ -357,7 +356,6 @@ img {
 
 @media (max-width: 1200px) {
   .header {
-    margin-top: 65px;
     font-size: 30px;
   }
 }
@@ -628,14 +626,7 @@ img {
   position: absolute;
   width: 100%;
   background-color: var(--color-gray);
-  bottom: 130px;
   z-index: 1;
-}
-
-@media (max-width: 1200px) {
-  .fullscreen__info {
-    bottom: 65px;
-  }
 }
 
 @media (max-width: 576px) {
