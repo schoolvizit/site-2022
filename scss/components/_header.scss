@@ -9,8 +9,8 @@ position: fixed;
   line-height: 28px;
 
   @include small-desktop{
-    margin-top: 65px;
-    font-size: 30px;
+    margin-top:60px;
+     height: 60px;
   }
 
   &__title {
@@ -55,6 +55,7 @@ position: fixed;
   
   @include small-desktop{
    justify-content: center;
+   height: 60px;
   }
 
   @include small-tablet{

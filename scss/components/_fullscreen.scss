@@ -10,24 +10,26 @@
   min-height: 100vh;
 
   &__image {
-position: absolute;
-top: 50%;
-transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   &__info {
- 
+
     width: 100%;
     background-color: var(--color-gray);
- margin-bottom: 130px;
+    margin-bottom: 130px;
     z-index: 1;
 
     @include small-desktop {
-     bottom: 0;
+      margin-bottom: 0;
+      height: 40px;
     }
 
     @include mobile {
-     bottom: 0;
+      margin-bottom: 0;
+      height: 40px;
     }
 
   }
