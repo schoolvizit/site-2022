@@ -19,14 +19,14 @@
     width: 100%;
     background-color: var(--color-gray);
     // bottom: 130px;
-    z-index: 1;
+    // z-index: 1;
 
     @include small-desktop {
       // bottom: 65px;
     }
 
     @include mobile {
-      bottom: 0;
+      // bottom: 0;
     }
 
   }
