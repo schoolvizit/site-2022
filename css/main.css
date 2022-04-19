@@ -570,8 +570,10 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-align: center;
-    margin-top: 40px;
     font-family: "PoiretOne";
     font-size: 30px;
   }
@@ -580,9 +582,6 @@ img {
   }
   .header__item:not(:last-child) {
     margin-right: 0;
-  }
-  .header__item a.active {
-    color: var(--color-white);
   }
   .content {
     padding-top: 70px;
@@ -594,6 +593,7 @@ img {
     width: 100%;
   }
   .header__list {
+    margin-top: 0;
     font-size: 40px;
   }
 }
@@ -696,7 +696,6 @@ img {
     text-align: center;
     max-width: 100%;
     margin-bottom: 10px;
-    font-weight: 600;
   }
 }
 

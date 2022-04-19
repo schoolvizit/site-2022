@@ -109,8 +109,9 @@
 
     .header__list {
       flex-direction: column;
+      justify-content: center;
       text-align: center;
-      margin-top: 40px;
+      // margin-top: 40px;
       font-family: "PoiretOne";
       font-size: 30px;
     }
@@ -124,7 +125,7 @@
     }
 
     .header__item a.active {
-      color: var(--color-white);
+      // color: var(--color-white);
     }
 
     .content {
@@ -145,6 +146,8 @@
     }
    
     .header__list{
+    
+      margin-top: 0;
       font-size: 40px;
     }
   }
