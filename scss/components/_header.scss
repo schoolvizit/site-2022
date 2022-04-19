@@ -17,7 +17,8 @@ position: fixed;
      height: 60px;
      width: 60px;
      right: 20px;
-     border-radius: 50%;
+     border-radius: 50px;
+     background-color: var(--color-gray);
   }
 
   &__title {
