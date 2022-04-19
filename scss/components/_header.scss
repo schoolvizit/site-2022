@@ -31,13 +31,13 @@ position: fixed;
     color: var(--color-gray);
     margin-top: 70px;
     // z-index: 10;
-    // text-align: left;
     
      text-shadow: 2px 2px 0 var(--color-lightgray), 2px -2px 0 var(--color-lightgray), -2px 2px 0 var(--color-lightgray), -2px -2px 0 var(--color-lightgray), 2px 0px 0 var(--color-lightgray), 0px 2px 0 var(--color-lightgray), -2px 0px 0 var(--color-lightgray), 0px -2px 0 var(--color-lightgray);
 
     @include small-desktop{
       display: none;
      }
+
   }
 }
 

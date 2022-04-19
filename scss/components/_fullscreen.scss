@@ -15,16 +15,9 @@
     top: 50%;
     transform: translateY(-50%);
  
-
-    @include small-tablet {
-      img {
-        transform: scale(2);
-      }
-    }
-
     @include mobile {
       img {
-        transform: scale(3);
+        transform: scale(2);
       }
     }
   }
@@ -38,12 +31,11 @@
 
     @include small-desktop {
       margin-bottom: 0;
-      height: 60px;
+
     }
 
     @include mobile {
       margin-bottom: 0;
-      height: 60px;
     }
 
   }
@@ -62,7 +54,6 @@
 
     @include small-desktop {
       margin-bottom: 0;
-      height: 60px;
     }
 
     @include mobile {
