@@ -196,41 +196,41 @@ for (let anchor of anchors) {
 
 // smooth-scroll
 
-// const scroll = new SmoothScroll('.to-top');
-// const toTop = document.querySelector('.to-top');
-// const fullscreenHeight = document.querySelector('.fullscreen').offsetHeight;
+const scroll = new SmoothScroll('.to-top');
+const toTop = document.querySelector('.to-top');
+const fullscreenHeight = document.querySelector('.fullscreen').offsetHeight;
 
-// const isVisibleToTop = (y = 0) => {
-//   if (y >= fullscreenHeight) {
-//     toTop.classList.add('to-top--active');
-//   } else {
-//     toTop.classList.remove('to-top--active');
-//   }
+const isVisibleToTop = (y = 0) => {
+  if (y >= fullscreenHeight) {
+    toTop.classList.add('to-top--active');
+  } else {
+    toTop.classList.remove('to-top--active');
+  }
+}
+
+window.addEventListener('scroll', () => {
+  let y = window.scrollY;
+  isVisibleToTop(y);
+});
+
+
+// var scrolled;
+// var timer;
+
+// document.getElementById('to-top').onclick = function () {
+//   scrolled = window.pageYOffset;
+//   scrollToTop();
 // }
 
-// window.addEventListener('scroll', () => {
-//   let y = window.scrollY;
-//   isVisibleToTop(y);
-// });
-
-
-var scrolled;
-var timer;
-
-document.getElementById('to-top').onclick = function () {
-  scrolled = window.pageYOffset;
-  scrollToTop();
-}
-
-function scrollToTop () {
-  if (scrolled > 0) {
-    window.scrollTo(0, scrolled);
-    scrolled = scrolled - 100;
-    timer = setTimeout(scrollToTop, 1);
-  }
-  else {
-    clearTimeout(timer);
-    window.scrollTo(0,0);
-  }
-}
+// function scrollToTop () {
+//   if (scrolled > 0) {
+//     window.scrollTo(0, scrolled);
+//     scrolled = scrolled - 100;
+//     timer = setTimeout(scrollToTop, 1);
+//   }
+//   else {
+//     clearTimeout(timer);
+//     window.scrollTo(0,0);
+//   }
+// }
 
