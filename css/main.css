@@ -362,7 +362,6 @@ img {
 
 @media (max-width: 768px) {
   .header {
-    height: 60px;
     width: 60px;
     right: 20px;
     border-radius: 50px;
@@ -619,6 +618,7 @@ img {
           justify-content: flex-end;
   text-align: center;
   min-height: 100vh;
+  overflow: hidden;
 }
 
 .fullscreen__image {
@@ -626,6 +626,20 @@ img {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+@media (max-width: 768px) {
+  .fullscreen__image img {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+}
+
+@media (max-width: 576px) {
+  .fullscreen__image img {
+    -webkit-transform: scale(3);
+            transform: scale(3);
+  }
 }
 
 .fullscreen__info {
