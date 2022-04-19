@@ -345,7 +345,7 @@ img {
 .header {
   position: fixed;
   width: 100%;
-  margin-top: 130px;
+  top: 130px;
   z-index: 10;
   background-color: var(--color-lightgray);
   font-family: "PoiretOne";
@@ -355,8 +355,17 @@ img {
 
 @media (max-width: 1200px) {
   .header {
-    margin-top: 60px;
+    top: 60px;
     height: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    height: 60px;
+    width: 60px;
+    right: 20px;
+    border-radius: 50%;
   }
 }
 
