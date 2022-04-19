@@ -59,7 +59,7 @@ position: fixed;
   }
 
   @include small-tablet{
-    justify-content: end;
+    justify-content: flex-end;
    }
 }
 
