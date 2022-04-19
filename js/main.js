@@ -196,7 +196,7 @@ for (let anchor of anchors) {
 
 // smooth-scroll
 
-const scroll = new SmoothScroll('.to-top');
+// const scroll = new SmoothScroll('.to-top');
 const toTop = document.querySelector('.to-top');
 const fullscreenHeight = document.querySelector('.fullscreen').offsetHeight;
 
