@@ -10,7 +10,7 @@
 
 html, body{
   height: 100%;
-  scroll-behavior: smooth;
+  // scroll-behavior: smooth;
 }
 
 .page {
@@ -176,7 +176,8 @@ img {
 display: flex;
 justify-content: center;
 align-items: center;
-  right: calc((100% - 1240px) / 2);
+  // right: calc((100% - 1240px) / 2);
+  right: 50%;
   bottom: 60px;
   width: 60px;
   height: 60px;
@@ -184,8 +185,8 @@ align-items: center;
   background-color: var(--color-orange);
   transform: rotate(90deg);
   z-index: 5;
-  opacity: 0;
-  visibility: hidden;
+  // opacity: 0;
+  // visibility: hidden;
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 
  svg{
