@@ -14,8 +14,8 @@ position: fixed;
   }
 
   @include small-tablet{
-     width: 60px;
-     right: 20px;
+    width: 60px;
+     right: 15px;
      border-radius: 50px;
      background-color: var(--color-gray);
   }

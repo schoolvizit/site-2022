@@ -75,7 +75,7 @@ document.querySelectorAll('.select__dropdown').forEach(function (dropDownWrapper
       selectBtn.innerText = this.innerText;
       selectBtn.focus();
       selectPriceOne.innerText = this.dataset.value;
-      selectPriceTwo.innerText = ( + selectPriceOne.innerText + 7);
+      selectPriceTwo.innerText = (+selectPriceOne.innerText + 7);
       selectBtn.classList.remove('active');
       selectList.classList.remove('select__list--visible');
     })
@@ -103,12 +103,12 @@ document.querySelectorAll('.select__dropdown').forEach(function (dropDownWrapper
 // бургер
 
 const burger = document.querySelector('.burger'),
-      buttonClose = document.querySelector('.burger span'),
-      menu = document.querySelector('.header__menu'),
-      links = document.querySelectorAll('.header__link'),
+  buttonClose = document.querySelector('.burger span'),
+  menu = document.querySelector('.header__menu'),
+  links = document.querySelectorAll('.header__link'),
 
-      // блок перекрывающий контент body
-      overlay = document.querySelector('.burger__overlay');
+  // блок перекрывающий контент body
+  overlay = document.querySelector('.burger__overlay');
 
 
 
@@ -146,19 +146,19 @@ window.addEventListener('scroll', () => {
   let scrollDistance = window.scrollY;
 
 
-	if (window.innerWidth > 768) {
-		document.querySelectorAll('.fullscreen').forEach((el, i) => {
-			if (el.offsetTop - document.querySelector('.header__menu').clientHeight <= scrollDistance) {
-				document.querySelectorAll('.header__menu a').forEach((el) => {
-					if (el.classList.contains('active')) {
-						el.classList.remove('active');
-					}
-				});
+  if (window.innerWidth > 768) {
+    document.querySelectorAll('.fullscreen').forEach((el, i) => {
+      if (el.offsetTop - document.querySelector('.header__menu').clientHeight <= scrollDistance) {
+        document.querySelectorAll('.header__menu a').forEach((el) => {
+          if (el.classList.contains('active')) {
+            el.classList.remove('active');
+          }
+        });
 
-				document.querySelectorAll('.header__menu li')[i].querySelector('a').classList.add('active');
-			}
-		});
-	}
+        document.querySelectorAll('.header__menu li')[i].querySelector('a').classList.add('active');
+      }
+    });
+  }
 });
 
 // Плавный скролл
@@ -183,13 +183,54 @@ let anchors = document.querySelectorAll('header a[href*="#"]');
 
 for (let anchor of anchors) {
   if (anchor) {
-    anchor.addEventListener('click', function(e){
+    anchor.addEventListener('click', function (e) {
       e.preventDefault();
       let anchorId = this.getAttribute('href');
       document.querySelector(anchorId).scrollIntoView({
-        behavior: 'smooth', block: 'start'
+        behavior: 'smooth',
+        block: 'start'
       })
     })
+  }
+}
+
+// smooth-scroll
+
+// const scroll = new SmoothScroll('.to-top');
+// const toTop = document.querySelector('.to-top');
+// const fullscreenHeight = document.querySelector('.fullscreen').offsetHeight;
+
+// const isVisibleToTop = (y = 0) => {
+//   if (y >= fullscreenHeight) {
+//     toTop.classList.add('to-top--active');
+//   } else {
+//     toTop.classList.remove('to-top--active');
+//   }
+// }
+
+// window.addEventListener('scroll', () => {
+//   let y = window.scrollY;
+//   isVisibleToTop(y);
+// });
+
+
+var scrolled;
+var timer;
+
+document.getElementById('to-top').onclick = function () {
+  scrolled = window.pageYOffset;
+  scrollToTop();
+}
+
+function scrollToTop () {
+  if (scrolled > 0) {
+    window.scrollTo(0, scrolled);
+    scrolled = scrolled - 100;
+    timer = setTimeout(scrollToTop, 1);
+  }
+  else {
+    clearTimeout(timer);
+    window.scrollTo(0,0);
   }
 }
 

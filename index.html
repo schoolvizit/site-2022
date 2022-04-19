@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body class="page__body">
+<body id="page" class="page__body">
 
 
 
@@ -24,19 +24,19 @@
           <nav class="header__menu">
             <ul class="header__list">
               <li class="header__item">
-                <a href="#journal" class="header__link">Журнал</a>
+                <a href="#journal" data-scroll class="header__link">Журнал</a>
               </li>
               <li class="header__item">
-                <a href="#trumo" class="header__link">Трюмо</a>
+                <a href="#trumo" data-scroll class="header__link">Трюмо</a>
               </li>
               <li class="header__item">
-                <a href="#papka" class="header__link">Папка</a>
+                <a href="#papka" data-scroll class="header__link">Папка</a>
               </li>
               <li class="header__item">
-                <a href="#vignet" class="header__link">Общее фото</a>
+                <a href="#vignet" data-scroll class="header__link">Общее фото</a>
               </li>
               <li class="header__item">
-                <a href="#portret" class="header__link">Портрет</a>
+                <a href="#portret" data-scroll class="header__link">Портрет</a>
               </li>
             </ul>
           </nav>
@@ -433,12 +433,18 @@
     </section>
 
     <footer class="footer">
+      <a data-scroll href="#page" id="to-top">
+        <svg class="to-top__icon">
+          <use xlink:href="img/sprite.svg#arrow-left"></use>
+        </svg>
+      </a>
       <div class="container"></div>
     </footer>
   </div>
 
   <script src="js/swiper.min.js"></script>
   <script src="js/fslightbox.js"></script>
+  <script src="js/smooth-scroll.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 
