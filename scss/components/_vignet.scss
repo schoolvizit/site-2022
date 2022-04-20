@@ -34,7 +34,11 @@
     padding: 80px 0;
 
     @include tablet{
+      max-width: 700px;
+     }
 
+     @include mobile{
+      max-width: 400px;
      }
   }
 }
