@@ -974,6 +974,7 @@ img {
 
 .vignet {
   padding: 100px 0;
+  min-height: 100vh;
   background-color: var(--color-light);
 }
 
@@ -1038,8 +1039,6 @@ img {
 }
 
 .swiper-slide img {
-  height: 100%;
-  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -1098,12 +1097,6 @@ img {
           justify-content: center;
 }
 
-@media (max-width: 768px) {
-  .slider-nav {
-    display: none;
-  }
-}
-
 .slider-nav__btn {
   position: absolute;
   top: 60%;
@@ -1120,6 +1113,13 @@ img {
           user-select: none;
 }
 
+@media (max-width: 768px) {
+  .slider-nav__btn {
+    width: 40px;
+    height: 40px;
+  }
+}
+
 .slider-nav__btn svg {
   display: block;
   margin: 0 auto;
@@ -1128,6 +1128,13 @@ img {
   -o-object-fit: cover;
      object-fit: cover;
   fill: var(--color-orange);
+}
+
+@media (max-width: 768px) {
+  .slider-nav__btn svg {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .vignet__prev {

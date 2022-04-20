@@ -1,9 +1,7 @@
 .slider-nav {
   @include flex-all-center;
 
-  @include small-tablet{
-    display: none;
-  }
+
 
   &__btn {
     position: absolute;
@@ -14,7 +12,13 @@
     height: 60px;
     background: var(--color-light);
     border-radius: 100%;
-user-select: none;
+    user-select: none;
+
+    @include small-tablet{
+      width: 40px;
+      height: 40px;
+    }
+
     svg {
       display: block;
       margin: 0 auto;
@@ -22,6 +26,12 @@ user-select: none;
       height: 60px;
       object-fit: cover;
       fill: var(--color-orange);
+
+      
+    @include small-tablet{
+      width: 40px;
+      height: 40px;
+    }
     }
   }
 }
