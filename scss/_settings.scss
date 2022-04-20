@@ -90,7 +90,7 @@ img {
     font-style: normal;
     font-weight: normal;
     font-size: 48px;
-    line-height: 56px;
+    line-height: 1.2;
     text-transform: uppercase;
     color: var(--color-gray);
     margin-bottom: 30px;
@@ -112,7 +112,18 @@ img {
         width: 100%;
         margin-right: 60px;
       }
-     }
+    }
+
+    @include small-tablet {
+      display: block;
+      text-align: center;
+      font-size: 40px;
+
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
   }
 }
 
@@ -143,6 +154,11 @@ img {
     line-height: 1;
     color: var(--color-orange);
     margin-bottom: 25px;
+
+    @include small-tablet {
+      font-size: 20px;
+    }
+
   }
 
   &__body {
@@ -154,11 +170,20 @@ img {
     margin-bottom: 15px;
     font-size: 20px;
     line-height: 1;
+
+    @include small-tablet {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
   }
 
   &__list--bottom li {
     font-size: 20px;
     line-height: 1;
+
+    @include small-tablet {
+      font-size: 16px;
+    }
   }
 
   &__list--bottom li:not(:last-child) {
@@ -176,6 +201,11 @@ img {
     width: 18px;
     height: 18px;
     margin-right: 10px;
+
+    @include small-tablet {
+      width: 14px;
+      height: 14px;
+    }
   }
 
   &__list,
@@ -185,6 +215,10 @@ img {
       text-transform: uppercase;
       font-size: 20px;
       line-height: 1;
+
+      @include small-tablet {
+        font-size: 16px;
+      }
     }
   }
 
@@ -193,8 +227,9 @@ img {
   }
 
   &__image {
-    @include tablet{
+    @include tablet {
       margin-bottom: 20px;
+      max-width: 300px;
     }
   }
 }
@@ -226,6 +261,17 @@ img {
       border-top: 1px solid var(--color-gray);
       width: 100%;
       margin-left: 60px;
+    }
+
+    @include small-tablet {
+      display: block;
+      text-align: center;
+      font-size: 25px;
+
+      &::before,
+      &::after {
+        display: none;
+      }
     }
   }
 
