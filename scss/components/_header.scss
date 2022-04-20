@@ -1,43 +1,23 @@
 .header {
-position: fixed;
+  position: fixed;
   width: 100%;
- top: 130px;
+  top: 130px;
   z-index: 10;
-  background-color: var(--color-lightgray);
+  background-color: #e0e5e7c2;
   font-family: "PoiretOne";
   font-style: normal;
   line-height: 28px;
 
-  @include small-desktop{
-    top:60px;
-     height: 60px;
+  @include small-desktop {
+    top: 60px;
+    height: 60px;
   }
 
-  @include small-tablet{
+  @include small-tablet {
     width: 60px;
-     right: 15px;
-     border-radius: 50px;
-     background-color: var(--color-gray);
-  }
-
-  &__title {
-    width: 500px;
-    font-family: "Montserrat";
-    font-style: italic;
-    font-weight: 900;
-    font-size: 64px;
-    line-height: 68px;
-    text-transform: uppercase;
-    color: var(--color-gray);
-    margin-top: 70px;
-    // z-index: 10;
-    
-     text-shadow: 2px 2px 0 var(--color-lightgray), 2px -2px 0 var(--color-lightgray), -2px 2px 0 var(--color-lightgray), -2px -2px 0 var(--color-lightgray), 2px 0px 0 var(--color-lightgray), 0px 2px 0 var(--color-lightgray), -2px 0px 0 var(--color-lightgray), 0px -2px 0 var(--color-lightgray);
-
-    @include small-desktop{
-      display: none;
-     }
-
+    right: 15px;
+    border-radius: 50px;
+    background-color: var(--color-gray);
   }
 }
 
@@ -56,18 +36,18 @@ position: fixed;
 .header__body {
   position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   height: 80px;
-  
-  @include small-desktop{
-   justify-content: center;
-   height: 60px;
+
+  @include small-desktop {
+    justify-content: center;
+    height: 60px;
   }
 
-  @include small-tablet{
+  @include small-tablet {
     justify-content: flex-end;
-   }
+  }
 }
 
 

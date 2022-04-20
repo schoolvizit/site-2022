@@ -213,6 +213,20 @@ window.addEventListener('scroll', () => {
   isVisibleToTop(y);
 });
 
+// header
+
+// (function () {
+//   const header = document.querySelector('.header');
+//   window.onscroll = () => {
+//     if (window.pageYOffset > 50) {
+//       header.classList.add('header--active');
+//     }
+//     else {
+//       header.classList.remove('header--active');
+//     }
+//   };
+// }());
+
 
 // var scrolled;
 // var timer;

@@ -180,17 +180,21 @@ img {
   &__list--bottom li {
     font-size: 20px;
     line-height: 1;
-
+   margin-bottom: 15px;
     @include small-tablet {
       font-size: 16px;
+      margin-bottom: 10px;
     }
   }
 
+  &__list li:not(:last-child), 
   &__list--bottom li:not(:last-child) {
-    margin-bottom: 15px;
-  }
-
  
+    @include small-tablet {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+  }
 
   &__list li::before,
   &__list--bottom li::before {
@@ -212,6 +216,13 @@ img {
 
   &__list--top li::before{
     display: none;
+  }
+
+  &__list--top{
+    @include tablet {
+  margin-bottom: 10px;
+    }
+   
   }
 
   &__list,
