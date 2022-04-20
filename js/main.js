@@ -3,7 +3,7 @@
 const swiperVignet = document.querySelector('.vignet__slider');
 if (swiperVignet) {
   const swiperVignetProj = new Swiper(swiperVignet, {
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: 0,
     loop: true,
     keyboard: {
@@ -22,6 +22,17 @@ if (swiperVignet) {
       nextEl: '.vignet__next',
       prevEl: '.vignet__prev',
     },
+
+    breakpoints: {
+
+      576: {
+        slidesPerView: 2
+      },
+
+      1024: {
+        slidesPerView: 3,
+      }
+    }
   })
 
 };

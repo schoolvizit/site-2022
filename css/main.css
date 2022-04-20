@@ -182,7 +182,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  right: 15px;
+  right: calc((100% - 1240px) / 2);
   bottom: 60px;
   width: 60px;
   height: 60px;
@@ -195,6 +195,12 @@ body {
   visibility: hidden;
   -webkit-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+@media (max-width: 1440px) {
+  .to-top {
+    right: 15px;
+  }
 }
 
 .to-top svg {

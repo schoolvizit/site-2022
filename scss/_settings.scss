@@ -44,8 +44,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  // right: calc((100% - 1240px) / 2);
-  right: 15px;
+  right: calc((100% - 1240px) / 2);
   bottom: 60px;
   width: 60px;
   height: 60px;
@@ -56,6 +55,10 @@ body {
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+
+  @include big-desktop {
+    right: 15px;
+  }
 
   svg {
     fill: var(--color-lightgray);
