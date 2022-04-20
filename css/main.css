@@ -487,12 +487,19 @@ img {
   max-width: 200px;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .carts__lable {
   display: block;
   color: var(--color-gray);
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .carts__lable {
+    font-size: 20px;
+  }
 }
 
 .header {

@@ -298,12 +298,16 @@ img {
   img {
     max-width: 200px;
     object-fit: cover;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
 
   &__lable {
     display: block;
     color: var(--color-gray);
+    text-align: center;
+    @include small-tablet{
+      font-size: 20px;
+    }
   }
 }
 
