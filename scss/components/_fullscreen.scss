@@ -47,6 +47,10 @@
   width: 100%;
   margin-top: 137px;
 
+  @include small-tablet {
+    margin-top: 60px;
+  }
+
   h1 {
     text-align: left;
     max-width: 500px;
@@ -57,8 +61,8 @@
     line-height: 1;
     text-transform: uppercase;
     color: var(--color-gray);
-    z-index: 10;
-    text-shadow: 2px 2px 0 var(--color-lightgray), 2px -2px 0 var(--color-lightgray), -2px 2px 0 var(--color-lightgray), -2px -2px 0 var(--color-lightgray), 2px 0px 0 var(--color-lightgray), 0px 2px 0 var(--color-lightgray), -2px 0px 0 var(--color-lightgray), 0px -2px 0 var(--color-lightgray);
+    z-index: 6;
+    text-shadow: 2px 2px 0 var(--color-light), 2px -2px 0 var(--color-light), -2px 2px 0 var(--color-light), -2px -2px 0 var(--color-light), 2px 0px 0 var(--color-light), 0px 2px 0 var(--color-light), -2px 0px 0 var(--color-light), 0px -2px 0 var(--color-light);
 
     @include small-tablet {
       font-size: 40px;
@@ -69,6 +73,7 @@
       text-align: center;
       max-width: 350px;
       margin: 0 auto;
+      margin-top: 77px;
     }
   }
 }

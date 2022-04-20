@@ -518,7 +518,7 @@ img {
   position: fixed;
   width: 100%;
   top: 130px;
-  z-index: 10;
+  z-index: 5;
   background-color: #e0e5e7c2;
   font-family: "PoiretOne";
   font-style: normal;
@@ -538,6 +538,7 @@ img {
     right: 15px;
     border-radius: 50px;
     background-color: var(--color-gray);
+    z-index: 10;
   }
 }
 
@@ -622,7 +623,7 @@ img {
     width: 35px;
     height: 30px;
     cursor: pointer;
-    z-index: 11;
+    z-index: 20;
   }
   .burger span {
     top: 50%;
@@ -812,6 +813,12 @@ img {
   margin-top: 137px;
 }
 
+@media (max-width: 768px) {
+  .fullscreen__title {
+    margin-top: 60px;
+  }
+}
+
 .fullscreen__title h1 {
   text-align: left;
   max-width: 500px;
@@ -822,8 +829,8 @@ img {
   line-height: 1;
   text-transform: uppercase;
   color: var(--color-gray);
-  z-index: 10;
-  text-shadow: 2px 2px 0 var(--color-lightgray), 2px -2px 0 var(--color-lightgray), -2px 2px 0 var(--color-lightgray), -2px -2px 0 var(--color-lightgray), 2px 0px 0 var(--color-lightgray), 0px 2px 0 var(--color-lightgray), -2px 0px 0 var(--color-lightgray), 0px -2px 0 var(--color-lightgray);
+  z-index: 6;
+  text-shadow: 2px 2px 0 var(--color-light), 2px -2px 0 var(--color-light), -2px 2px 0 var(--color-light), -2px -2px 0 var(--color-light), 2px 0px 0 var(--color-light), 0px 2px 0 var(--color-light), -2px 0px 0 var(--color-light), 0px -2px 0 var(--color-light);
 }
 
 @media (max-width: 768px) {
@@ -838,6 +845,7 @@ img {
     text-align: center;
     max-width: 350px;
     margin: 0 auto;
+    margin-top: 77px;
   }
 }
 
