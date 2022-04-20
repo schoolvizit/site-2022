@@ -190,6 +190,8 @@ img {
     margin-bottom: 15px;
   }
 
+ 
+
   &__list li::before,
   &__list--bottom li::before {
     content: "";
@@ -206,6 +208,10 @@ img {
       width: 14px;
       height: 14px;
     }
+  }
+
+  &__list--top li::before{
+    display: none;
   }
 
   &__list,

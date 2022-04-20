@@ -395,6 +395,10 @@ img {
   }
 }
 
+.content__list--top li::before {
+  display: none;
+}
+
 .content__list .item span, .content__list--bottom .item span {
   font-weight: 600;
   text-transform: uppercase;
