@@ -8,7 +8,8 @@
 //   }
 // }
 
-html, body{
+html,
+body {
   height: 100%;
   scroll-behavior: smooth;
 }
@@ -31,6 +32,45 @@ html, body{
   line-height: 24px;
 }
 
+
+.container {
+  margin: 0 auto;
+  padding: 0 var(--container-offset);
+  max-width: var(--container-width);
+}
+
+.to-top {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // right: calc((100% - 1240px) / 2);
+  right: 15px;
+  bottom: 60px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  background-color: var(--color-orange);
+  transform: rotate(90deg);
+  z-index: 5;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+
+  svg {
+    fill: var(--color-lightgray);
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+  }
+
+  &--active {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  }
+}
+
 img {
   height: auto;
   max-width: 100%;
@@ -43,7 +83,7 @@ img {
 
 .cart {
   background-color: var(--color-light);
-  // padding: 50px 0;
+  padding: 50px 0;
 
   &__title {
     font-family: "PoiretOne";
@@ -63,18 +103,38 @@ img {
       width: 100%;
       margin-left: 60px;
     }
+
+    @include tablet {
+
+      &::before {
+        content: "";
+        border-top: 1px solid var(--color-gray);
+        width: 100%;
+        margin-right: 60px;
+      }
+     }
   }
 }
 
-.content{
+.content {
   display: flex;
   justify-content: space-between;
-  // margin-bottom: 50px;
+
+  @include tablet {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 
   &__info {
     @include flex-col-sb;
     width: 50%;
     padding-right: 20px;
+
+    @include tablet {
+      padding-right: 0;
+      width: 100%;
+      text-align: center;
+    }
   }
 
   &__title {
@@ -96,11 +156,10 @@ img {
     line-height: 1;
   }
 
-  &__list--bottom li{
+  &__list--bottom li {
     font-size: 20px;
     line-height: 1;
   }
-
 
   &__list--bottom li:not(:last-child) {
     margin-bottom: 15px;
@@ -132,80 +191,70 @@ img {
   span.small {
     text-transform: lowercase;
   }
-}
 
-.is-hidden {
-  display: none !important;
-  /* stylelint-disable-line declaration-no-important */
-}
-
-.input-reset {
-  -webkit-appearance: none;
-  appearance: none;
-  border: none;
-  border-radius: 0;
-  background-color: #fff;
-
-  &::-webkit-search-decoration,
-  &::-webkit-search-cancel-button,
-  &::-webkit-search-results-button,
-  &::-webkit-search-results-decoration {
-    display: none;
+  &__image {
+    @include tablet{
+      margin-bottom: 20px;
+    }
   }
 }
 
-.visually-hidden {
-  position: absolute;
-  overflow: hidden;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  width: 1px;
-  height: 1px;
-  clip: rect(0 0 0 0);
+.gallery {
+
+  &__title {
+    font-family: "PoiretOne";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: var(--color-gray);
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+
+    &::before {
+      content: "";
+      border-top: 1px solid var(--color-gray);
+      width: 100%;
+      margin-right: 60px;
+    }
+
+    &::after {
+      content: "";
+      border-top: 1px solid var(--color-gray);
+      width: 100%;
+      margin-left: 60px;
+    }
+  }
+
+  &__body {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 -20px;
+  }
 }
 
-.container {
-  margin: 0 auto;
-  padding: 0 var(--container-offset);
-  max-width: var(--container-width);
+.carts {
+  &__inner {
+    padding: 0 20px;
+    margin-bottom: 30px;
+  }
+
+  img {
+    max-width: 200px;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+
+  &__lable {
+    display: block;
+    color: var(--color-gray);
+  }
 }
 
-.to-top{
-  position: fixed;
-display: flex;
-justify-content: center;
-align-items: center;
-  // right: calc((100% - 1240px) / 2);
-  right: 15px;
-  bottom: 60px;
-  width: 60px;
-  height: 60px;
-  border-radius: 50px;
-  background-color: var(--color-orange);
-  transform: rotate(90deg);
-  z-index: 5;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-
- svg{
-   fill: var(--color-lightgray);
-   width: 50px;
-   height: 50px;
-   object-fit: cover;
- }
-
- &--active{
-   opacity: 1;
-   visibility: visible;
-   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
- }
-}
-
-.js-focus-visible :focus:not(.focus-visible) {
-  outline: none;
-}
 
 // .dis-scroll {
 //   position: fixed;

@@ -1,4 +1,9 @@
 .select {
+
+  @include tablet{
+    margin: 0 auto;
+  }
+  
   &__dropdown {
     position: relative;
   }
