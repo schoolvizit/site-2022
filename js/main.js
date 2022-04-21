@@ -5,6 +5,7 @@ if (swiperVignet) {
   const swiperVignetProj = new Swiper(swiperVignet, {
     slidesPerView: 1,
     spaceBetween:0,
+   observer: true,
     loop: true,
     keyboard: {
       enabled: true

@@ -325,7 +325,7 @@ img {
 .content__title {
   font-weight: 600;
   font-style: normal;
-  line-height: 1;
+  line-height: 1.2;
   color: var(--color-orange);
   margin-bottom: 25px;
 }
@@ -353,7 +353,7 @@ img {
 .content__list li {
   margin-bottom: 15px;
   font-size: 20px;
-  line-height: 1;
+  line-height: 1.2;
 }
 
 @media (max-width: 768px) {
@@ -365,7 +365,7 @@ img {
 
 .content__list--bottom li {
   font-size: 20px;
-  line-height: 1;
+  line-height: 1.2;
   margin-bottom: 15px;
 }
 
@@ -417,11 +417,15 @@ img {
   }
 }
 
+.content__list span {
+  text-transform: lowercase;
+}
+
 .content__list .item span, .content__list--bottom .item span {
   font-weight: 600;
   text-transform: uppercase;
   font-size: 20px;
-  line-height: 1;
+  line-height: 1.2;
 }
 
 @media (max-width: 768px) {
@@ -972,112 +976,107 @@ img {
   background-color: var(--color-lightgray);
 }
 
-.vignet {
-  padding: 100px 0;
-  min-height: 100vh;
-  background-color: var(--color-light);
-}
-
-.vignet__body {
-  position: relative;
-  color: var(--color-gray);
-}
-
-.vignet__title {
-  font-family: "PoiretOne";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 48px;
-  line-height: 56px;
-  text-transform: uppercase;
-  color: var(--color-gray);
-  margin-bottom: 65px;
-  white-space: nowrap;
+.photo__body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.vignet__title::after {
-  content: "";
-  border-top: 1px solid var(--color-gray);
-  width: 100%;
-  margin-left: 60px;
+@media (max-width: 768px) {
+  .photo__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
-.vignet__slider {
-  max-width: 1000px;
-  padding: 80px 0;
+.photo__image {
+  max-width: 300px;
+}
+
+.photo__info {
+  margin: 0 15px;
 }
 
 @media (max-width: 1024px) {
-  .vignet__slider {
-    max-width: 700px;
+  .photo__info {
+    text-align: center;
   }
 }
 
-@media (max-width: 576px) {
-  .vignet__slider {
-    max-width: 400px;
+@media (max-width: 768px) {
+  .photo__info {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin: 0px 0px 20px 0px;
   }
 }
 
-.swiper-slide {
-  cursor: pointer;
-  opacity: 0.7;
-  -webkit-transition: .5s;
-  transition: .5s;
+.info__top {
+  margin-bottom: 50px;
 }
 
 @media (max-width: 1024px) {
-  .swiper-slide {
-    opacity: 1;
+  .info__top {
+    margin-bottom: 30px;
   }
 }
 
-.swiper-slide img {
-  -o-object-fit: cover;
-     object-fit: cover;
+.info__item {
+  margin-bottom: 15px;
+  font-size: 20px;
+  line-height: 1.2;
 }
 
-.swiper-slide__lable {
-  display: block;
-  text-align: center;
-  margin-top: 20px;
-  color: var(--color-orange);
-  font-size: 30px;
+@media (max-width: 768px) {
+  .info__item {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+}
+
+.info__item span {
+  font-weight: 600;
   text-transform: uppercase;
 }
 
-.swiper-slide.swiper-slide-active {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  opacity: 1;
-  z-index: 10;
-}
-
-@media (max-width: 1024px) {
-  .swiper-slide.swiper-slide-active {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+@media (max-width: 768px) {
+  .info__item span {
+    font-size: 16px;
   }
 }
 
-.swiper-slide.swiper-slide-active img {
-  -webkit-box-shadow: 0px 6px 20px #647e89;
-          box-shadow: 0px 6px 20px #647e89;
+.info__bottom li::before {
+  content: "";
+  display: inline-block;
+  top: 0;
+  left: 0;
+  background-image: url(../img/tick.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
 }
 
-@media (max-width: 1024px) {
-  .swiper-slide.swiper-slide-active img {
-    -webkit-box-shadow: none;
-            box-shadow: none;
+@media (max-width: 768px) {
+  .info__bottom li::before {
+    width: 14px;
+    height: 14px;
   }
+}
+
+.info span.small {
+  text-transform: lowercase;
 }
 
 .footer {
