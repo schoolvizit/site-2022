@@ -12,23 +12,34 @@
   }
 
   &__image {
-    position: relative;
-    max-width: 300px;
-text-align: center;
-  }
+  position: relative;
+  max-width: 300px;
 
-  &__lable {
-    // cursor: pointer;
-    display: inline-block;
+  @include small-tablet {
+   margin-bottom: 20px;
+         
+      }
+
+img{
+
+width: 100%;
+object-fit: cover;
+}
+
+ button{
+display: inline-block;
 position: absolute;
 width: 100%;
-bottom: 0;
+bottom: 30px;
 left: 0;
-background-color: rgba(204, 169, 118, 0.767);
-
+color: var(--color-white);
+background-color: #ff9500d0;
+font-size: 24px;
+font-style: italic;
 padding: 20px 0px;
-
+}
   }
+
 
   &__descr {
     margin: 0 15px;
@@ -36,9 +47,8 @@ padding: 20px 0px;
   text-align: center;
 }
     @include small-tablet {
-     order: -1;
-     margin: 0px 0px 20px 0px;
-     
+     order: 1;
+          
        }
   }
 }

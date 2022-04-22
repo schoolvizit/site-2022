@@ -1,71 +1,72 @@
 // слайдеры
 
-const swiperVignet = document.querySelector('.vignet__slider');
-if (swiperVignet) {
-  const swiperVignetProj = new Swiper(swiperVignet, {
-    slidesPerView: 1,
-    spaceBetween:0,
-   observer: true,
-    loop: true,
-    keyboard: {
-      enabled: true
-    },
-    centeredSlides: true,
-    // Стартовый слайд
-    initialSlide: 0,
-    //   effect: 'coverflow',
-    // coverflowEffect: {
-    //   rotate: 20,
-    //   // stretch: 50,
-    //   slideShadows: false
-    // },
-    navigation: {
-      nextEl: '.vignet__next',
-      prevEl: '.vignet__prev',
-    },
+// const swiperVignet = document.querySelector('.vignet__slider');
+// if (swiperVignet) {
+//   const swiperVignetProj = new Swiper(swiperVignet, {
+//     slidesPerView: 1,
+//     spaceBetween:0,
+//    observer: true,
+//     loop: true,
+//     keyboard: {
+//       enabled: true
+//     },
+//     centeredSlides: true,
+//     // Стартовый слайд
+//     initialSlide: 0,
+//     //   effect: 'coverflow',
+//     // coverflowEffect: {
+//     //   rotate: 20,
+//     //   // stretch: 50,
+//     //   slideShadows: false
+//     // },
+//     navigation: {
+//       nextEl: '.vignet__next',
+//       prevEl: '.vignet__prev',
+//     },
 
-    breakpoints: {
-      
+//     breakpoints: {
 
-      576: {
-        slidesPerView: 2,
-        centeredSlides: false,
-        spaceBetween:20,
-      },
 
-      1024: {
-        slidesPerView: 3,
-        
-      }
-    }
-  })
+//       576: {
+//         slidesPerView: 2,
+//         centeredSlides: false,
+//         spaceBetween:20,
+//       },
 
-};
+//       1024: {
+//         slidesPerView: 3,
 
-const swiperPortret = document.querySelector('.portret__slider');
-if (swiperPortret) {
-  const swiperPortretProj = new Swiper(swiperPortret, {
-    slidesPerView: 3,
-    spaceBetween: 0,
-    loop: true,
-    keyboard: {
-      enabled: true
-    },
-    centeredSlides: true,
-    // Стартовый слайд
-    initialSlide: 0,
-    //   effect: 'coverflow',
-    // coverflowEffect: {
-    //   rotate: 20,
-    //   // stretch: 50,
-    //   slideShadows: false
-    // },
-    navigation: {
-      nextEl: '.portret__next',
-      prevEl: '.portret__prev',
-    },
-  })
-};
+//       }
+//     }
+//   })
+
+// };
+
+// const swiperPortret = document.querySelector('.portret__slider');
+// if (swiperPortret) {
+//   const swiperPortretProj = new Swiper(swiperPortret, {
+//     slidesPerView: 3,
+//     spaceBetween: 0,
+//     loop: true,
+//     keyboard: {
+//       enabled: true
+//     },
+//     centeredSlides: true,
+//     // Стартовый слайд
+//     initialSlide: 0,
+//     //   effect: 'coverflow',
+//     // coverflowEffect: {
+//     //   rotate: 20,
+//     //   // stretch: 50,
+//     //   slideShadows: false
+//     // },
+//     navigation: {
+//       nextEl: '.portret__next',
+//       prevEl: '.portret__prev',
+//     },
+//   })
+// };
+
 
 // select
 
@@ -264,4 +265,8 @@ window.addEventListener('scroll', () => {
 //   }
 // }
 
+// галлерея
 
+document.querySelector('.photo__btn').addEventListener('click', () => {
+  fsLightboxInstances['gallery'].open(0);
+});

@@ -988,16 +988,30 @@ img {
 .photo__image {
   position: relative;
   max-width: 300px;
-  text-align: center;
 }
 
-.photo__lable {
+@media (max-width: 768px) {
+  .photo__image {
+    margin-bottom: 20px;
+  }
+}
+
+.photo__image img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.photo__image button {
   display: inline-block;
   position: absolute;
   width: 100%;
-  bottom: 0;
+  bottom: 30px;
   left: 0;
-  background-color: rgba(204, 169, 118, 0.767);
+  color: var(--color-white);
+  background-color: #ff9500d0;
+  font-size: 24px;
+  font-style: italic;
   padding: 20px 0px;
 }
 
@@ -1013,10 +1027,9 @@ img {
 
 @media (max-width: 768px) {
   .photo__descr {
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
-    margin: 0px 0px 20px 0px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
 }
 
