@@ -1011,7 +1011,7 @@ img {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   color: var(--color-white);
-  background-color: #ff9500d0;
+  background-color: rgba(255, 149, 0, 0.8);
   border-radius: 100px;
   border: 2px solid var(--color-white);
   font-size: 24px;
