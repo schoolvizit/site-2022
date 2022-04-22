@@ -529,7 +529,7 @@ img {
   width: 100%;
   top: 130px;
   z-index: 5;
-  background-color: #e0e5e7c2;
+  background-color: rgba(99, 125, 136, 0.5);
   font-family: "PoiretOne";
   font-style: normal;
   line-height: 28px;
@@ -1005,7 +1005,7 @@ img {
 .photo__image button {
   display: inline-block;
   position: absolute;
-  width: 85%;
+  width: 90%;
   bottom: 35px;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -1015,6 +1015,7 @@ img {
   border-radius: 100px;
   border: 2px solid var(--color-white);
   font-size: 24px;
+  line-height: 1;
   font-style: italic;
   padding: 10px 0px;
 }

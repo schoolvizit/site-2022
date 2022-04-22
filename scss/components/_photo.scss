@@ -27,7 +27,7 @@
     button {
       display: inline-block;
       position: absolute;
-      width: 85%;
+      width: 90%;
       bottom: 35px;
       left: 50%;
       transform: translateX(-50%);
@@ -36,6 +36,7 @@
       border-radius: 100px;
       border: 2px solid var(--color-white);
       font-size: 24px;
+      line-height: 1;
       font-style: italic;
       padding: 10px 0px;
     }
