@@ -268,5 +268,9 @@ window.addEventListener('scroll', () => {
 // галлерея
 
 document.querySelector('.photo__btn').addEventListener('click', () => {
-  fsLightboxInstances['gallery'].open(0);
+  fsLightboxInstances['vignets'].open(0);
+});
+
+document.querySelector('.photo__btn--portrets').addEventListener('click', () => {
+  fsLightboxInstances['portrets'].open(0);
 });

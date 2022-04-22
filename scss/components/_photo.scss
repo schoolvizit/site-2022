@@ -5,81 +5,68 @@
     justify-content: space-between;
 
     @include small-tablet {
-   flex-direction: column;
-   align-items: center;
+      flex-direction: column;
+      align-items: center;
     }
 
   }
 
   &__image {
-  position: relative;
-  max-width: 300px;
+    position: relative;
+    max-width: 300px;
 
-  @include small-tablet {
-   margin-bottom: 20px;
-         
-      }
+    @include small-tablet {
+      margin-bottom: 20px;
+    }
 
-img{
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
 
-width: 100%;
-object-fit: cover;
-}
-
- button{
-display: inline-block;
-position: absolute;
-width: 100%;
-bottom: 30px;
-left: 0;
-color: var(--color-white);
-background-color: #ff9500d0;
-font-size: 24px;
-font-style: italic;
-padding: 20px 0px;
-}
+    button {
+      display: inline-block;
+      position: absolute;
+      width: 100%;
+      bottom: 30px;
+      left: 0;
+      color: var(--color-white);
+      background-color: #ff9500d0;
+      font-size: 24px;
+      font-style: italic;
+      padding: 20px 0px;
+    }
   }
 
 
   &__descr {
     margin: 0 15px;
-@include tablet {
-  text-align: center;
-}
+
+    @include tablet {
+      text-align: center;
+    }
+
     @include small-tablet {
-     order: 1;
-          
-       }
+      order: 1;
+    }
   }
-}
-
-.cart {
-
-  &__body {}
-
-  &__title {}
-}
-
-.carts {
-
-  
 }
 
 .descr {
 
   &__top {
     margin-bottom: 50px;
+
     @include tablet {
       margin-bottom: 30px;
     }
   }
 
-  &__list li {}
-
   &__item {
     margin-bottom: 15px;
     font-size: 20px;
     line-height: 1.2;
+
     @include small-tablet {
       font-size: 16px;
       margin-bottom: 10px;
@@ -88,6 +75,7 @@ padding: 20px 0px;
     span {
       font-weight: 600;
       text-transform: uppercase;
+
       @include small-tablet {
         font-size: 16px;
       }
@@ -111,13 +99,10 @@ padding: 20px 0px;
     }
   }
 
-  &__list span {
-    // text-transform: lowercase;
-  }
-
-  &__top{
+  &__top {
     text-align: center;
   }
+
   span.small {
     text-transform: lowercase;
   }
