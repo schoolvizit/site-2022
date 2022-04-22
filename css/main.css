@@ -529,7 +529,7 @@ img {
   width: 100%;
   top: 130px;
   z-index: 5;
-  background-color: rgba(99, 125, 136, 0.5);
+  background-color: rgba(99, 125, 136, 0.3);
   font-family: "PoiretOne";
   font-style: normal;
   line-height: 28px;
@@ -1020,21 +1020,21 @@ img {
   padding: 10px 0px;
 }
 
-.photo__descr {
+.descr {
   margin: 0 15px;
 }
 
 @media (max-width: 1024px) {
-  .photo__descr {
+  .descr {
     text-align: center;
   }
 }
 
 @media (max-width: 768px) {
-  .photo__descr {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+  .descr {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
   }
 }
 
@@ -1044,6 +1044,12 @@ img {
 
 @media (max-width: 1024px) {
   .descr__top {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .descr__bottom {
     margin-bottom: 30px;
   }
 }

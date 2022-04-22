@@ -41,26 +41,30 @@
       padding: 10px 0px;
     }
   }
-
-
-  &__descr {
-    margin: 0 15px;
-
-    @include tablet {
-      text-align: center;
-    }
-
-    @include small-tablet {
-      order: 1;
-    }
-  }
 }
 
 .descr {
 
+  margin: 0 15px;
+
+  @include tablet {
+    text-align: center;
+    
+  }
+
+  @include small-tablet {
+    order: -1;
+  }
+
   &__top {
     margin-bottom: 50px;
 
+    @include tablet {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__bottom {
     @include tablet {
       margin-bottom: 30px;
     }
