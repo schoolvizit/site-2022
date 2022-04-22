@@ -24,15 +24,6 @@
 
   &__info {
 
-    width: 100%;
-    background-color: var(--color-gray);
-    margin-bottom: 130px;
-    z-index: 1;
-
-    @include small-desktop {
-      margin-bottom: 0;
-
-    }
 
   }
 }
@@ -75,6 +66,15 @@
 }
 
 .info {
+  width: 100%;
+  background-color: var(--color-gray);
+  margin-bottom: 130px;
+  z-index: 1;
+
+  @include small-desktop {
+    margin-bottom: 0;
+
+  }
 
   &__body {
     height: 80px;

@@ -793,19 +793,6 @@ img {
   }
 }
 
-.fullscreen__info {
-  width: 100%;
-  background-color: var(--color-gray);
-  margin-bottom: 130px;
-  z-index: 1;
-}
-
-@media (max-width: 1200px) {
-  .fullscreen__info {
-    margin-bottom: 0;
-  }
-}
-
 .fullscreen__title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -850,6 +837,19 @@ img {
     max-width: 350px;
     margin: 0 auto;
     margin-top: 77px;
+  }
+}
+
+.info {
+  width: 100%;
+  background-color: var(--color-gray);
+  margin-bottom: 130px;
+  z-index: 1;
+}
+
+@media (max-width: 1200px) {
+  .info {
+    margin-bottom: 0;
   }
 }
 
