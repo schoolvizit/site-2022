@@ -1005,14 +1005,18 @@ img {
 .photo__image button {
   display: inline-block;
   position: absolute;
-  width: 100%;
-  bottom: 30px;
-  left: 0;
+  width: 85%;
+  bottom: 35px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   color: var(--color-white);
   background-color: #ff9500d0;
+  border-radius: 100px;
+  border: 2px solid var(--color-white);
   font-size: 24px;
   font-style: italic;
-  padding: 20px 0px;
+  padding: 10px 0px;
 }
 
 .photo__descr {
