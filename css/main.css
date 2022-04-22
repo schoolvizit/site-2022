@@ -535,7 +535,7 @@ img {
   line-height: 28px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
   .header {
     top: 60px;
     height: 60px;
@@ -566,7 +566,7 @@ img {
   height: 80px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
   .header__body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -806,12 +806,6 @@ img {
   }
 }
 
-@media (max-width: 576px) {
-  .fullscreen__info {
-    margin-bottom: 0;
-  }
-}
-
 .fullscreen__title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -873,12 +867,6 @@ img {
   font-size: 24px;
   line-height: 28px;
   color: var(--color-lightgray);
-}
-
-@media (max-width: 1200px) {
-  .info__body {
-    margin-bottom: 0;
-  }
 }
 
 @media (max-width: 576px) {
@@ -998,21 +986,33 @@ img {
 }
 
 .photo__image {
+  position: relative;
   max-width: 300px;
+  text-align: center;
 }
 
-.photo__info {
+.photo__lable {
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(204, 169, 118, 0.767);
+  padding: 20px 0px;
+}
+
+.photo__descr {
   margin: 0 15px;
 }
 
 @media (max-width: 1024px) {
-  .photo__info {
+  .photo__descr {
     text-align: center;
   }
 }
 
 @media (max-width: 768px) {
-  .photo__info {
+  .photo__descr {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
@@ -1020,41 +1020,41 @@ img {
   }
 }
 
-.info__top {
+.descr__top {
   margin-bottom: 50px;
 }
 
 @media (max-width: 1024px) {
-  .info__top {
+  .descr__top {
     margin-bottom: 30px;
   }
 }
 
-.info__item {
+.descr__item {
   margin-bottom: 15px;
   font-size: 20px;
   line-height: 1.2;
 }
 
 @media (max-width: 768px) {
-  .info__item {
+  .descr__item {
     font-size: 16px;
     margin-bottom: 10px;
   }
 }
 
-.info__item span {
+.descr__item span {
   font-weight: 600;
   text-transform: uppercase;
 }
 
 @media (max-width: 768px) {
-  .info__item span {
+  .descr__item span {
     font-size: 16px;
   }
 }
 
-.info__bottom li::before {
+.descr__bottom li::before {
   content: "";
   display: inline-block;
   top: 0;
@@ -1069,13 +1069,17 @@ img {
 }
 
 @media (max-width: 768px) {
-  .info__bottom li::before {
+  .descr__bottom li::before {
     width: 14px;
     height: 14px;
   }
 }
 
-.info span.small {
+.descr__top {
+  text-align: center;
+}
+
+.descr span.small {
   text-transform: lowercase;
 }
 

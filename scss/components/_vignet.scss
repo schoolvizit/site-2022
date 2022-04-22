@@ -12,10 +12,25 @@
   }
 
   &__image {
+    position: relative;
     max-width: 300px;
+text-align: center;
   }
 
-  &__info {
+  &__lable {
+    // cursor: pointer;
+    display: inline-block;
+position: absolute;
+width: 100%;
+bottom: 0;
+left: 0;
+background-color: rgba(204, 169, 118, 0.767);
+
+padding: 20px 0px;
+
+  }
+
+  &__descr {
     margin: 0 15px;
 @include tablet {
   text-align: center;
@@ -37,10 +52,10 @@
 
 .carts {
 
-  &__lable {}
+  
 }
 
-.info {
+.descr {
 
   &__top {
     margin-bottom: 50px;
@@ -90,13 +105,8 @@
     // text-transform: lowercase;
   }
 
-  &__top,
-  &__bottom {
-    .item span {
-     
-
-     
-    }
+  &__top{
+    text-align: center;
   }
   span.small {
     text-transform: lowercase;

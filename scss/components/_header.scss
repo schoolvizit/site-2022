@@ -8,7 +8,7 @@
   font-style: normal;
   line-height: 28px;
 
-  @include small-desktop {
+  @include tablet {
     top: 60px;
     height: 60px;
   }
@@ -41,7 +41,7 @@
   align-items: center;
   height: 80px;
 
-  @include small-desktop {
+  @include tablet {
     justify-content: center;
     height: 60px;
   }
