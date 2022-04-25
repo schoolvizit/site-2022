@@ -204,7 +204,7 @@ body {
 }
 
 .to-top svg {
-  fill: var(--color-lightgray);
+  fill: var(--color-white);
   width: 50px;
   height: 50px;
   -o-object-fit: cover;
@@ -1096,76 +1096,6 @@ img {
 .footer {
   height: 80px;
   background-color: var(--color-gray);
-}
-
-.slider-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.slider-nav__btn {
-  position: absolute;
-  top: 60%;
-  -webkit-transform: translateY(-60%);
-          transform: translateY(-60%);
-  z-index: 10;
-  width: 60px;
-  height: 60px;
-  background: var(--color-light);
-  border-radius: 100%;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-
-@media (max-width: 768px) {
-  .slider-nav__btn {
-    width: 40px;
-    height: 40px;
-  }
-}
-
-.slider-nav__btn svg {
-  display: block;
-  margin: 0 auto;
-  width: 60px;
-  height: 60px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  fill: var(--color-orange);
-}
-
-@media (max-width: 768px) {
-  .slider-nav__btn svg {
-    width: 40px;
-    height: 40px;
-  }
-}
-
-.vignet__prev {
-  left: 0;
-}
-
-.vignet__next {
-  right: 0;
-}
-
-.portret__prev {
-  left: 0;
-  background: var(--color-lightgray);
-}
-
-.portret__next {
-  right: 0;
-  background: var(--color-lightgray);
 }
 
 @media (max-width: 1024px) {
