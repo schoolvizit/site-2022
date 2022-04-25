@@ -1355,10 +1355,6 @@ img {
   background-color: var(--color-orange);
 }
 
-.fslightbox-toolbar > .fslightbox-toolbar-button::before:hover, .fslightbox-toolbar > .fslightbox-toolbar-button::after:hover {
-  background-color: var(--color-lightgray);
-}
-
 .fslightbox-toolbar > .fslightbox-toolbar-button::before {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
@@ -1374,15 +1370,19 @@ img {
 }
 
 .fslightbox-nav {
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .fslightbox-nav > .fslightbox-slide-number-container {
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  bottom: 20px;
+  margin-bottom: 20px;
   z-index: 1;
   width: 50px;
   height: 50px;
