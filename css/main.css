@@ -411,14 +411,15 @@ img {
   display: none;
 }
 
-@media (max-width: 1024px) {
-  .content__list--top {
-    margin-bottom: 10px;
-  }
-}
-
 .content__list span {
   text-transform: lowercase;
+}
+
+@media (max-width: 1024px) {
+  .content__list, .content__list--bottom {
+    text-align: left;
+    margin: 0 auto;
+  }
 }
 
 .content__list .item span, .content__list--bottom .item span {
@@ -432,6 +433,10 @@ img {
   .content__list .item span, .content__list--bottom .item span {
     font-size: 16px;
   }
+}
+
+.content__list--top {
+  margin-bottom: 10px;
 }
 
 .content span.small {
@@ -1011,12 +1016,6 @@ img {
   margin: 0 15px;
 }
 
-@media (max-width: 1024px) {
-  .descr {
-    text-align: center;
-  }
-}
-
 @media (max-width: 768px) {
   .descr {
     -webkit-box-ordinal-group: 0;
@@ -1065,6 +1064,10 @@ img {
   }
 }
 
+.descr__top {
+  text-align: center;
+}
+
 .descr__bottom li::before {
   content: "";
   display: inline-block;
@@ -1084,10 +1087,6 @@ img {
     width: 14px;
     height: 14px;
   }
-}
-
-.descr__top {
-  text-align: center;
 }
 
 .descr span.small {
@@ -1295,12 +1294,6 @@ img {
   background-color: var(--color-orange);
 }
 
-.fslightbox-slide-btn-container-previous .fslightbox-slide-btn::before:hover, .fslightbox-slide-btn-container-previous .fslightbox-slide-btn::after:hover,
-.fslightbox-slide-btn-container-next .fslightbox-slide-btn::before:hover,
-.fslightbox-slide-btn-container-next .fslightbox-slide-btn::after:hover {
-  background-color: var(--color-lightgray);
-}
-
 .fslightbox-slide-btn-container-previous .fslightbox-slide-btn::before,
 .fslightbox-slide-btn-container-next .fslightbox-slide-btn::before {
   top: 7px;
@@ -1321,11 +1314,11 @@ img {
 }
 
 .fslightbox-slide-btn-container-previous .fslightbox-slide-btn {
-  left: 30px;
+  left: 10px;
 }
 
 .fslightbox-slide-btn-container-next .fslightbox-slide-btn {
-  right: 30px;
+  right: 10px;
 }
 
 .fslightbox-slide-btn-container-next .fslightbox-slide-btn::before, .fslightbox-slide-btn-container-next .fslightbox-slide-btn::after {
@@ -1344,8 +1337,8 @@ img {
 
 .fslightbox-toolbar {
   background-color: transparent !important;
-  margin-top: 30px;
-  margin-right: 30px;
+  top: 10px;
+  right: 10px;
 }
 
 .fslightbox-toolbar-button {
@@ -1383,14 +1376,18 @@ img {
 }
 
 .fslightbox-slide-number-container {
-  margin-left: 20px;
-  margin-top: 30px;
+  margin: 0 auto;
+  z-index: 1;
+  width: 50px !important;
+  height: 50px !important;
   font-family: 'Montserrat';
-  font-size: 20px !important;
-  color: var(--color-orange) !important;
+  font-size: 30px !important;
+  color: var(--color-white) !important;
+  border-radius: 100px;
+  border: 2px solid var(--color-white);
+  background-color: var(--color-orange);
 }
 
-.fslightbox-slash {
-  height: 30px !important;
-  background-color: var(--color-orange) !important;
+.fslightbox-slide-number-container .fslightbox-flex-centered div, .fslightbox-slide-number-container .fslightbox-flex-centered .fslightbox-slash {
+  display: none;
 }

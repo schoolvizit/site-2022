@@ -8,7 +8,6 @@
       flex-direction: column;
       align-items: center;
     }
-
   }
 
   &__image {
@@ -44,12 +43,10 @@
 }
 
 .descr {
-
   margin: 0 15px;
 
   @include tablet {
-    text-align: center;
-    
+    // text-align: center;
   }
 
   @include small-tablet {
@@ -90,6 +87,10 @@
     }
   }
 
+ &__top {
+    text-align: center;
+  }
+
   &__bottom li::before {
     content: "";
     display: inline-block;
@@ -105,10 +106,6 @@
       width: 14px;
       height: 14px;
     }
-  }
-
-  &__top {
-    text-align: center;
   }
 
   span.small {

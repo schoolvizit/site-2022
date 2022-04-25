@@ -221,12 +221,7 @@ img {
     display: none;
   }
 
-  &__list--top{
-    @include tablet {
-  margin-bottom: 10px;
-    }
-   
-  }
+
 
   &__list span{
     text-transform: lowercase;
@@ -234,6 +229,11 @@ img {
 
   &__list,
   &__list--bottom {
+
+    @include tablet {
+      text-align: left;
+      margin: 0 auto;
+          }
     .item span {
       font-weight: 600;
       text-transform: uppercase;
@@ -245,6 +245,10 @@ img {
       }
     }
   }
+
+  &__list--top{
+    margin-bottom: 10px;
+ }
 
   span.small {
     text-transform: lowercase;
