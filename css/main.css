@@ -1338,17 +1338,18 @@ img {
 .fslightbox-nav {
   height: 100%;
   width: 100%;
-  position: relative;
+  position: relative !important;
 }
 
 .fslightbox-toolbar {
   background-color: transparent !important;
-  top: 10px;
-  right: 10px;
 }
 
 .fslightbox-toolbar-button {
-  position: relative;
+  position: relative !important;
+  background-color: transparent !important;
+  top: 10px;
+  right: 10px;
   width: 50px;
   height: 50px;
 }
@@ -1382,7 +1383,7 @@ img {
 }
 
 .fslightbox-slide-number-container {
-  position: absolute;
+  position: absolute !important;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
