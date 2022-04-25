@@ -1335,6 +1335,12 @@ img {
           transform: rotate(45deg);
 }
 
+.fslightbox-nav {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
 .fslightbox-toolbar {
   background-color: transparent !important;
   top: 10px;
@@ -1376,7 +1382,11 @@ img {
 }
 
 .fslightbox-slide-number-container {
-  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 10px;
   z-index: 1;
   width: 50px !important;
   height: 50px !important;

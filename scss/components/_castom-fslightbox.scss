@@ -53,7 +53,9 @@ right: 10px;
 }
 
 .fslightbox-nav{
-
+  height: 100%;
+  width: 100%;
+position: relative;
 }
 
 .fslightbox-toolbar {
@@ -95,7 +97,10 @@ right: 10px;
 }
 
 .fslightbox-slide-number-container{
-margin: 0 auto;
+position: absolute;
+left: 50%;
+transform: translateX(-50%);
+bottom: 10px;
 z-index: 1;
   width: 50px !important;
   height: 50px !important;
