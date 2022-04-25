@@ -1338,7 +1338,6 @@ img {
 .fslightbox-nav {
   height: 100%;
   width: 100%;
-  position: relative !important;
 }
 
 .fslightbox-toolbar {
@@ -1347,7 +1346,6 @@ img {
 
 .fslightbox-toolbar-button {
   position: relative !important;
-  background-color: transparent !important;
   top: 10px;
   right: 10px;
   width: 50px;
@@ -1387,8 +1385,8 @@ img {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  bottom: 10px;
-  z-index: 1;
+  bottom: 10px !important;
+  z-index: 1 !important;
   width: 50px !important;
   height: 50px !important;
   font-family: 'Montserrat';
