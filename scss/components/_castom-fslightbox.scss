@@ -1,8 +1,6 @@
-.fslightbox-slide-btn-container-previous .fslightbox-slide-btn,
-.fslightbox-slide-btn-container-next .fslightbox-slide-btn {
-  background-color: transparent;
+.fslightbox-slide-btn-container>.fslightbox-slide-btn {
+  background-color: var(--color-orange);
   border-radius: 100px;
-  border: 1px solid var(--color-orange);
   position: relative;
   width: 50px;
   height: 50px;
@@ -11,70 +9,73 @@
   &::after {
     content: "";
     position: absolute;
-    width: 1px;
+    width: 2px;
     height: 20px;
-    left: 22px;
-    background-color: var(--color-orange);
+    right: 26px;
+    background-color: var(--color-white);
   }
 
   &::before {
-    top: 7px;
+    top: 8px;
     transform: rotate(45deg);
+
   }
 
   &::after {
-    bottom: 7px;
+    bottom: 8px;
     transform: rotate(-45deg);
   }
 
   svg {
-    visibility: hidden;
+    display: none;
   }
 }
 
-.fslightbox-slide-btn-container-previous .fslightbox-slide-btn{
-left: 10px;
+.fslightbox-slide-btn-container-previous .fslightbox-slide-btn {
+  left: 10px;
 }
 
 .fslightbox-slide-btn-container-next .fslightbox-slide-btn {
-right: 10px;
-  &::before,
-  &::after {
-    left: 25px;
-  }
+  right: 10px;
+}
+
+.fslightbox-slide-btn-container-next .fslightbox-slide-btn {
 
   &::before {
     transform: rotate(-45deg);
+    left: 26px;
   }
 
   &::after {
     transform: rotate(45deg);
+    left: 26px;
   }
 }
 
-.fslightbox-nav{
-//   height: 100%;
-//   width: 100%;
-// position: relative !important;
+.fslightbox-container>.fslightbox-nav {
+  height: 100%;
+  width: 100%;
 }
 
-.fslightbox-toolbar {
-  background-color: transparent !important;
-}
-
-.fslightbox-toolbar-button {
-  position: relative !important;
-  // background-color: transparent !important;
+.fslightbox-container>.fslightbox-nav>.fslightbox-toolbar {
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
   top: 10px;
   right: 10px;
-  width: 50px;
-  height: 50px;
+}
+
+.fslightbox-toolbar>.fslightbox-toolbar-button {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
   &::before,
   &::after {
     content: "";
     position: absolute;
     width: 1px;
-    height: 40px;
+    height: 100%;
     top: 0;
     left: 50%;
     background-color: var(--color-orange);
@@ -91,38 +92,37 @@ right: 10px;
   &::after {
     transform: rotate(-45deg);
   }
+
   svg {
- visibility: hidden;
+    visibility: hidden;
   }
 
 }
 
-.fslightbox-slide-number-container{
-// position: absolute !important;
-// left: 50%;
-// transform: translateX(-50%);
-// bottom: 50px !important;
-left: 10px;
-top: 10px;
-z-index: 1 !important;
-  width: 50px !important;
-  height: 50px !important;
+.fslightbox-nav{
+  position: relative;
+}
+
+.fslightbox-nav>.fslightbox-slide-number-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 20px;
+
+  z-index: 1;
+  width: 50px;
+  height: 50px;
   font-family: 'Montserrat';
-font-size:30px !important;
-  color: var(--color-white) !important;
+  font-size: 30px;
+  color: var(--color-white);
   border-radius: 100px;
   border: 2px solid var(--color-white);
   background-color: var(--color-orange);
 }
 
-// .fslightbox-slash{
-//   height: 30px !important;
-//   background-color : var(--color-orange) !important;
-//   display: none;
-// }
-
-.fslightbox-slide-number-container .fslightbox-flex-centered{
-  div, .fslightbox-slash{
+.fslightbox-slide-number-container .fslightbox-flex-centered {
+  div,
+  .fslightbox-slash {
     display: none;
   }
 }

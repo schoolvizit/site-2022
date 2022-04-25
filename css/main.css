@@ -1273,44 +1273,37 @@ img {
   padding-bottom: 10px;
 }
 
-.fslightbox-slide-btn-container-previous .fslightbox-slide-btn,
-.fslightbox-slide-btn-container-next .fslightbox-slide-btn {
-  background-color: transparent;
+.fslightbox-slide-btn-container > .fslightbox-slide-btn {
+  background-color: var(--color-orange);
   border-radius: 100px;
-  border: 1px solid var(--color-orange);
   position: relative;
   width: 50px;
   height: 50px;
 }
 
-.fslightbox-slide-btn-container-previous .fslightbox-slide-btn::before, .fslightbox-slide-btn-container-previous .fslightbox-slide-btn::after,
-.fslightbox-slide-btn-container-next .fslightbox-slide-btn::before,
-.fslightbox-slide-btn-container-next .fslightbox-slide-btn::after {
+.fslightbox-slide-btn-container > .fslightbox-slide-btn::before, .fslightbox-slide-btn-container > .fslightbox-slide-btn::after {
   content: "";
   position: absolute;
-  width: 1px;
+  width: 2px;
   height: 20px;
-  left: 22px;
-  background-color: var(--color-orange);
+  right: 26px;
+  background-color: var(--color-white);
 }
 
-.fslightbox-slide-btn-container-previous .fslightbox-slide-btn::before,
-.fslightbox-slide-btn-container-next .fslightbox-slide-btn::before {
-  top: 7px;
+.fslightbox-slide-btn-container > .fslightbox-slide-btn::before {
+  top: 8px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
-.fslightbox-slide-btn-container-previous .fslightbox-slide-btn::after,
-.fslightbox-slide-btn-container-next .fslightbox-slide-btn::after {
-  bottom: 7px;
+.fslightbox-slide-btn-container > .fslightbox-slide-btn::after {
+  bottom: 8px;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
 
-.fslightbox-slide-btn-container-previous .fslightbox-slide-btn svg,
-.fslightbox-slide-btn-container-next .fslightbox-slide-btn svg {
-  visibility: hidden;
+.fslightbox-slide-btn-container > .fslightbox-slide-btn svg {
+  display: none;
 }
 
 .fslightbox-slide-btn-container-previous .fslightbox-slide-btn {
@@ -1321,74 +1314,87 @@ img {
   right: 10px;
 }
 
-.fslightbox-slide-btn-container-next .fslightbox-slide-btn::before, .fslightbox-slide-btn-container-next .fslightbox-slide-btn::after {
-  left: 25px;
-}
-
 .fslightbox-slide-btn-container-next .fslightbox-slide-btn::before {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
+  left: 26px;
 }
 
 .fslightbox-slide-btn-container-next .fslightbox-slide-btn::after {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
+  left: 26px;
 }
 
-.fslightbox-toolbar {
-  background-color: transparent !important;
+.fslightbox-container > .fslightbox-nav {
+  height: 100%;
+  width: 100%;
 }
 
-.fslightbox-toolbar-button {
-  position: relative !important;
+.fslightbox-container > .fslightbox-nav > .fslightbox-toolbar {
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
   top: 10px;
   right: 10px;
-  width: 50px;
-  height: 50px;
 }
 
-.fslightbox-toolbar-button::before, .fslightbox-toolbar-button::after {
+.fslightbox-toolbar > .fslightbox-toolbar-button {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.fslightbox-toolbar > .fslightbox-toolbar-button::before, .fslightbox-toolbar > .fslightbox-toolbar-button::after {
   content: "";
   position: absolute;
   width: 1px;
-  height: 40px;
+  height: 100%;
   top: 0;
   left: 50%;
   background-color: var(--color-orange);
 }
 
-.fslightbox-toolbar-button::before:hover, .fslightbox-toolbar-button::after:hover {
+.fslightbox-toolbar > .fslightbox-toolbar-button::before:hover, .fslightbox-toolbar > .fslightbox-toolbar-button::after:hover {
   background-color: var(--color-lightgray);
 }
 
-.fslightbox-toolbar-button::before {
+.fslightbox-toolbar > .fslightbox-toolbar-button::before {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
-.fslightbox-toolbar-button::after {
+.fslightbox-toolbar > .fslightbox-toolbar-button::after {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
 
-.fslightbox-toolbar-button svg {
+.fslightbox-toolbar > .fslightbox-toolbar-button svg {
   visibility: hidden;
 }
 
-.fslightbox-slide-number-container {
-  left: 10px;
-  top: 10px;
-  z-index: 1 !important;
-  width: 50px !important;
-  height: 50px !important;
+.fslightbox-nav {
+  position: relative;
+}
+
+.fslightbox-nav > .fslightbox-slide-number-container {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 20px;
+  z-index: 1;
+  width: 50px;
+  height: 50px;
   font-family: 'Montserrat';
-  font-size: 30px !important;
-  color: var(--color-white) !important;
+  font-size: 30px;
+  color: var(--color-white);
   border-radius: 100px;
   border: 2px solid var(--color-white);
   background-color: var(--color-orange);
 }
 
-.fslightbox-slide-number-container .fslightbox-flex-centered div, .fslightbox-slide-number-container .fslightbox-flex-centered .fslightbox-slash {
+.fslightbox-slide-number-container .fslightbox-flex-centered div,
+.fslightbox-slide-number-container .fslightbox-flex-centered .fslightbox-slash {
   display: none;
 }
