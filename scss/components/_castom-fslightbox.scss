@@ -92,7 +92,6 @@
   svg {
     visibility: hidden;
   }
-
 }
 
 .fslightbox-nav{
@@ -102,11 +101,6 @@ align-items: flex-end;
 }
 
 .fslightbox-nav>.fslightbox-slide-number-container {
-  // position: absolute;
-// left: 50%;
-  // transform: translateX(-50%);
-  // bottom: 20px;
-
 margin-bottom: 20px;
   z-index: 1;
   width: 50px;
