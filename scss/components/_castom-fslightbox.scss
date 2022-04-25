@@ -53,8 +53,8 @@ right: 10px;
 }
 
 .fslightbox-nav{
-  height: 100%;
-  width: 100%;
+//   height: 100%;
+//   width: 100%;
 // position: relative !important;
 }
 
@@ -98,10 +98,12 @@ right: 10px;
 }
 
 .fslightbox-slide-number-container{
-position: absolute !important;
-left: 50%;
-transform: translateX(-50%);
-bottom: 10px !important;
+// position: absolute !important;
+// left: 50%;
+// transform: translateX(-50%);
+// bottom: 50px !important;
+left: 10px;
+top: 10px;
 z-index: 1 !important;
   width: 50px !important;
   height: 50px !important;
