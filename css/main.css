@@ -1216,8 +1216,8 @@ img {
   position: absolute;
   width: 90%;
   height: 90%;
-  -webkit-mask-image: url(../../img/svg/arrow-left.svg);
-          mask-image: url(../../img/svg/arrow-left.svg);
+  -webkit-mask-image: url(../img/svg/arrow-left.svg);
+          mask-image: url(../img/svg/arrow-left.svg);
   -webkit-mask-repeat: no-repeat;
           mask-repeat: no-repeat;
   -webkit-mask-size: cover;
