@@ -652,7 +652,7 @@ img {
     width: 100%;
     position: absolute;
     height: 2px;
-    background: var(--color-lightgray);
+    background: var(--color-light);
     display: block;
     -webkit-transition: .2s;
     transition: .2s;
