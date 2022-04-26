@@ -1204,32 +1204,27 @@ img {
 }
 
 .fslightbox-slide-btn-container > .fslightbox-slide-btn {
-  background-color: var(--color-orange);
+  background-color: rgba(255, 149, 0, 0.6);
   border-radius: 100px;
   position: relative;
   width: 50px;
   height: 50px;
 }
 
-.fslightbox-slide-btn-container > .fslightbox-slide-btn::before, .fslightbox-slide-btn-container > .fslightbox-slide-btn::after {
+.fslightbox-slide-btn-container > .fslightbox-slide-btn::before {
   content: "";
   position: absolute;
-  width: 2px;
-  height: 20px;
-  right: 26px;
+  width: 90%;
+  height: 90%;
+  -webkit-mask-image: url(../../img/svg/arrow-left.svg);
+          mask-image: url(../../img/svg/arrow-left.svg);
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-size: cover;
+          mask-size: cover;
+  -webkit-mask-position: center;
+          mask-position: center;
   background-color: var(--color-white);
-}
-
-.fslightbox-slide-btn-container > .fslightbox-slide-btn::before {
-  top: 8px;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.fslightbox-slide-btn-container > .fslightbox-slide-btn::after {
-  bottom: 8px;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
 }
 
 .fslightbox-slide-btn-container > .fslightbox-slide-btn svg {
@@ -1245,15 +1240,8 @@ img {
 }
 
 .fslightbox-slide-btn-container-next .fslightbox-slide-btn::before {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  left: 26px;
-}
-
-.fslightbox-slide-btn-container-next .fslightbox-slide-btn::after {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  left: 26px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .fslightbox-container > .fslightbox-nav {

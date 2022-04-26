@@ -1,29 +1,20 @@
 .fslightbox-slide-btn-container>.fslightbox-slide-btn {
-  background-color: var(--color-orange);
+  background-color: rgba(255, 149, 0, 0.6);
   border-radius: 100px;
   position: relative;
   width: 50px;
   height: 50px;
 
-  &::before,
-  &::after {
+  &::before {
     content: "";
     position: absolute;
-    width: 2px;
-    height: 20px;
-    right: 26px;
+    width: 90%;
+    height: 90%;
+    mask-image: url(../../img/svg/arrow-left.svg);
+    mask-repeat: no-repeat;
+    mask-size: cover;
+    mask-position: center;
     background-color: var(--color-white);
-  }
-
-  &::before {
-    top: 8px;
-    transform: rotate(45deg);
-
-  }
-
-  &::after {
-    bottom: 8px;
-    transform: rotate(-45deg);
   }
 
   svg {
@@ -37,18 +28,8 @@
 
 .fslightbox-slide-btn-container-next .fslightbox-slide-btn {
   right: 10px;
-}
-
-.fslightbox-slide-btn-container-next .fslightbox-slide-btn {
-
   &::before {
-    transform: rotate(-45deg);
-    left: 26px;
-  }
-
-  &::after {
-    transform: rotate(45deg);
-    left: 26px;
+    transform: rotate(180deg);
   }
 }
 
@@ -94,14 +75,14 @@
   }
 }
 
-.fslightbox-nav{
-display: flex;
-justify-content: center;
-align-items: flex-end;
+.fslightbox-nav {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .fslightbox-nav>.fslightbox-slide-number-container {
-margin-bottom: 20px;
+  margin-bottom: 20px;
   z-index: 1;
   width: 50px;
   height: 50px;
@@ -114,6 +95,7 @@ margin-bottom: 20px;
 }
 
 .fslightbox-slide-number-container .fslightbox-flex-centered {
+
   div,
   .fslightbox-slash {
     display: none;
