@@ -1251,8 +1251,8 @@ img {
 
 .fslightbox-container > .fslightbox-nav > .fslightbox-toolbar {
   background-color: transparent;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   top: 10px;
   right: 10px;
 }
@@ -1266,7 +1266,7 @@ img {
 .fslightbox-toolbar > .fslightbox-toolbar-button::before, .fslightbox-toolbar > .fslightbox-toolbar-button::after {
   content: "";
   position: absolute;
-  width: 1px;
+  width: 2px;
   height: 100%;
   top: 0;
   left: 50%;
