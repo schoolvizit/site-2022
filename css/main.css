@@ -1310,6 +1310,7 @@ img {
   border-radius: 100px;
   border: 2px solid var(--color-white);
   background-color: var(--color-orange);
+  display: none;
 }
 
 .fslightbox-slide-number-container .fslightbox-flex-centered div,

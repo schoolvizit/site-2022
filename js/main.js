@@ -274,3 +274,11 @@ document.querySelector('.photo__btn').addEventListener('click', () => {
 document.querySelector('.photo__btn--portrets').addEventListener('click', () => {
   fsLightboxInstances['portrets'].open(0);
 });
+
+fsLightboxInstances['portrets'].props.onOpen = () => {
+  document.getElementsByClassName('fslightbox-slide-number-container')[0].style = "display: block;";
+};
+
+fsLightboxInstances['vignets'].props.onOpen = () => {
+  document.getElementsByClassName('fslightbox-slide-number-container')[0].style = "display: block;";
+}; 
