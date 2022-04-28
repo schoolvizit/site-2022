@@ -91,7 +91,12 @@
         </div>
       </div>
       <div class="fullscreen__image container">
-        <img src="img/fon.png" alt="fon">
+        <picture>
+          <!-- <source srcset="img/fon-1.png" type="image/png" media="(max-width: 767px)"> -->
+          <source srcset="img/fon-1.png" type="image/png" media="(orientation: portrait)">
+          <source srcset="img/fon.png" type="image/png">
+          <img loading="lazy" src="img/fon.png" width="" height="" alt="">
+        </picture>
       </div>
     </section>
 
@@ -372,7 +377,7 @@
           <h3 class="cart__title">фото</h3>
           <div class="photo__body">
             <div class="photo__image">
-              <button class="photo__btn">общее фото</button>
+              <button class="photo__btn photo__btn--vignet">общее фото</button>
               <a data-fslightbox="vignets" href="img/vignets/v_001.jpg"><img src="img/photo-1.jpg" alt="#"></a>
               <a data-fslightbox="vignets" href="img/vignets/v_002.jpg"></a>
               <a data-fslightbox="vignets" href="img/vignets/v_003.jpg"></a>
@@ -410,7 +415,7 @@
             </div>
 
             <div class="photo__image">
-              <button class="photo__btn photo__btn--portrets">портрет</button>
+              <button class="photo__btn photo__btn--portret">портрет</button>
               <a data-fslightbox="portrets" href="img/portrets/001.jpg"><img src="img/photo-2.jpg" alt="#"></a>
               <a data-fslightbox="portrets" href="img/portrets/002.jpg"></a>
               <a data-fslightbox="portrets" href="img/portrets/003.jpg"></a>
@@ -429,7 +434,6 @@
               <a data-fslightbox="portrets" href="img/portrets/016.jpg"></a>
               <a data-fslightbox="portrets" href="img/portrets/017.jpg"></a>
               <a data-fslightbox="portrets" href="img/portrets/018.jpg"></a>
-
             </div>
           </div>
         </div>
@@ -437,8 +441,7 @@
     </section>
 
     <footer class="footer">
-      <div class="container">
-      </div>
+      <div class="container"></div>
     </footer>
   </div>
 

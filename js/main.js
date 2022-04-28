@@ -267,11 +267,11 @@ window.addEventListener('scroll', () => {
 
 // галлерея
 
-document.querySelector('.photo__btn').addEventListener('click', () => {
+document.querySelector('.photo__btn--vignet').addEventListener('click', () => {
   fsLightboxInstances['vignets'].open(0);
 });
 
-document.querySelector('.photo__btn--portrets').addEventListener('click', () => {
+document.querySelector('.photo__btn--portret').addEventListener('click', () => {
   fsLightboxInstances['portrets'].open(0);
 });
 
