@@ -461,25 +461,11 @@ img {
   display: inline-block;
   font-family: "PoiretOne";
   font-style: normal;
-  font-weight: normal;
   font-size: 30px;
   line-height: 1.2;
   text-transform: uppercase;
-  color: var(--color-gray);
+  color: var(--color-text);
   white-space: nowrap;
-}
-
-.gallery__title h3::before {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  left: -30px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  border-radius: 100px;
-  background-color: var(--color-orange-opacity);
 }
 
 @media (max-width: 768px) {
