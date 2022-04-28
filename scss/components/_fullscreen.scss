@@ -14,12 +14,6 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-
-    @include mobile {
-      img {
-        transform: scale(2);
-      }
-    }
   }
 
   &__info {

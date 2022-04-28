@@ -777,13 +777,6 @@ img {
           transform: translateY(-50%);
 }
 
-@media (max-width: 576px) {
-  .fullscreen__image img {
-    -webkit-transform: scale(2);
-            transform: scale(2);
-  }
-}
-
 .fullscreen__title {
   display: -webkit-box;
   display: -ms-flexbox;
